@@ -1,3 +1,4 @@
+import EmailLogin from "../../framer/emailLogin"
 import Link from "next/link";
 import { headers } from "next/headers";
 import { createClient } from "@/utils/supabase/server";
@@ -73,7 +74,7 @@ export default function Login({
         </svg>{" "}
         Back
       </Link>
-
+      <EmailLogin email="test@gmail.com" password="1234"  />
       <form className="animate-in flex-1 flex flex-col w-full justify-center gap-2 text-foreground">
         <label className="text-md" htmlFor="email">
           Email
@@ -96,7 +97,7 @@ export default function Login({
         />
         <SubmitButton
           formAction={signIn}
-          className="bg-green-700 rounded-md px-4 py-2 text-foreground mb-2"
+          className="bg-pink-500 rounded-md px-4 py-2 text-foreground mb-2"
           pendingText="Signing In..."
         >
           Sign In
@@ -117,3 +118,5 @@ export default function Login({
     </div>
   );
 }
+
+

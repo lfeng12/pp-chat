@@ -1,0 +1,18 @@
+{
+    "outDir": "./framer",
+    "components": {
+
+        "landing": "https://framer.com/m/Login-nh3A.js@fYhBO8NuK4NTiEthCd1A",
+        "emailLogin": "https://framer.com/m/login3-pATh.js@D9tMttBftbi6S1rReiK1",
+        "main": "https://framer.com/m/MAIN-vt6b.js@sdaQyX2ERzlhLc9qV1EB",
+        "chat1": "https://framer.com/m/chat1-GMwJ.js@3QhbdFvbenQpWQufbb0f",
+        "username": "https://framer.com/m/username-Gt1b.js@Aim5qeuCwcKVS66zfipN",
+        "verify1": "https://framer.com/m/verify1-1XqY.js@Bmw4BCgSwVOB44IXbi0J",
+        "finish": "https://framer.com/m/finish1-molv.js@NXQBqyAiV23Ikk1GuEiD",
+        "upload": "https://framer.com/m/upload-S5YQ.js@bLNNGeh85ao7o4hn2h2C",
+        "bye": "https://framer.com/m/done-TdTh.js@XDDOIVsik5ctv5tn8VW9",
+        "account": "https://framer.com/m/account-UYyc.js@1cpUXUCgUKHaOdpkE3z4",
+        "routine": "https://framer.com/m/routine-70Zz.js@pjBwmMXLUVZC2f667zlv"
+
+    }
+}
