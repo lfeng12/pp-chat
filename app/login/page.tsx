@@ -75,7 +75,7 @@ export default function Login({
         Back
       </Link>
       <EmailLogin email="test@gmail.com" password="1234"  />
-      <form className="animate-in flex-1 flex flex-col w-full justify-center gap-2 text-foreground">
+      {/*<form className="animate-in flex-1 flex flex-col w-full justify-center gap-2 text-foreground">
         <label className="text-md" htmlFor="email">
           Email
         </label>
@@ -114,7 +114,7 @@ export default function Login({
             {searchParams.message}
           </p>
         )}
-      </form>
+        </form> */}
     </div>
   );
 }
