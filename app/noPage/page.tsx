@@ -1,4 +1,4 @@
-import Bye from "../../framer/bye"
+import NoPage from "../../framer/noPage"
 import { createClient } from "@/utils/supabase/server";
 import '../../framer/styles.css'
 
@@ -18,7 +18,7 @@ export default async function Page() {
 
   return (
     <div className="flex-1 w-full flex flex-col gap-20 items-center">
-        <Bye />
+        <NoPage />
     </div>
   );
 }

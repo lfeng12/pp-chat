@@ -1,25 +1,39 @@
 /* eslint-disable */
 'use client';
-import { Conic, } from './chunk-VOFWIACZ.js';
+import { Conic, } from './chunk-WBH7D5FB.js';
 import './chunk-JJFCSOIW.js';
-import { Clock, } from './chunk-YQS4D325.js';
-import { className, css, fonts, } from './chunk-DCG3Q45P.js';
-import { Icon, } from './chunk-NTBY4HVU.js';
+import { Clock, } from './chunk-EIZOZDEQ.js';
+import { className, css, fonts, Icon, } from './chunk-6MAF3TKJ.js';
 import './chunk-ZBBVTMRC.js';
 
-// https :https://framerusercontent.com/modules/cOBZ24ERfie5L39kiB0e/sdaQyX2ERzlhLc9qV1EB/a4fbduHHq.js
-import { jsx as _jsx2, jsxs as _jsxs, } from 'react/jsx-runtime';
+// https :https://framerusercontent.com/modules/HXymEkHPIaZc2RDzewa7/bJTVAFPZDwsWax2wk6D7/Ibtk5tWbC.js
+import { jsx as _jsx7, jsxs as _jsxs5, } from 'react/jsx-runtime';
+import {
+  addFonts as addFonts6,
+  addPropertyControls as addPropertyControls4,
+  ComponentViewportProvider as ComponentViewportProvider6,
+  ControlType as ControlType4,
+  cx as cx6,
+  getFonts as getFonts6,
+  Scroll as Scroll2,
+  useActiveVariantCallback as useActiveVariantCallback3,
+  useComponentViewport as useComponentViewport6,
+  useLocaleInfo as useLocaleInfo6,
+  useVariantState as useVariantState6,
+  withCSS as withCSS6,
+} from 'unframer';
+import { LayoutGroup as LayoutGroup6, motion as motion6, MotionConfigContext as MotionConfigContext6, } from 'unframer';
+import * as React6 from 'react';
+
+// https :https://framerusercontent.com/modules/p5Ljvq8T9eEhN3ULZJh3/q2oO4PXB5JkorNKpeJqo/BGUN3CRKp.js
+import { jsx as _jsx, jsxs as _jsxs, } from 'react/jsx-runtime';
 import {
   addFonts,
-  addPropertyControls as addPropertyControls2,
+  addPropertyControls,
   ComponentViewportProvider,
-  ControlType as ControlType2,
+  ControlType,
   cx,
   getFonts,
-  getFontsFromSharedStyle,
-  Image as Image2,
-  RichText,
-  Scroll,
   useActiveVariantCallback,
   useComponentViewport,
   useLocaleInfo,
@@ -28,11 +42,202 @@ import {
 } from 'unframer';
 import { LayoutGroup, motion, MotionConfigContext, } from 'unframer';
 import * as React from 'react';
+var IconoirFonts = getFonts(Icon,);
+var cycleOrder = ['O5TDOtZUz',];
+var serializationHash = 'framer-3E4C1';
+var variantClassNames = { O5TDOtZUz: 'framer-v-1albic8', };
+var transition1 = { damping: 60, delay: 0, mass: 1, stiffness: 500, type: 'spring', };
+var Transition = ({ value, children, },) => {
+  const config = React.useContext(MotionConfigContext,);
+  const transition = value !== null && value !== void 0 ? value : config.transition;
+  const contextValue = React.useMemo(() => ({ ...config, transition, }), [JSON.stringify(transition,),],);
+  return /* @__PURE__ */ _jsx(MotionConfigContext.Provider, { value: contextValue, children, },);
+};
+var Variants = motion(React.Fragment,);
+var getProps = ({ height, id, tap, tap2, tap3, width, ...props },) => {
+  return {
+    ...props,
+    l4EmAYs9B: tap2 !== null && tap2 !== void 0 ? tap2 : props.l4EmAYs9B,
+    o2wfaBicH: tap3 !== null && tap3 !== void 0 ? tap3 : props.o2wfaBicH,
+    UbCBf8rh6: tap !== null && tap !== void 0 ? tap : props.UbCBf8rh6,
+  };
+};
+var createLayoutDependency = (props, variants,) => variants.join('-',) + props.layoutDependency;
+var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
+  const { activeLocale, setLocale, } = useLocaleInfo();
+  const { style, className: className2, layoutId, variant, UbCBf8rh6, l4EmAYs9B, o2wfaBicH, ...restProps } = getProps(props,);
+  const { baseVariant, classNames, gestureVariant, setGestureState, setVariant, variants, } = useVariantState({
+    cycleOrder,
+    defaultVariant: 'O5TDOtZUz',
+    variant,
+    variantClassNames,
+  },);
+  const layoutDependency = createLayoutDependency(props, variants,);
+  const { activeVariantCallback, delay, } = useActiveVariantCallback(baseVariant,);
+  const onClick7mzv26 = activeVariantCallback(async (...args) => {
+    if (UbCBf8rh6) {
+      const res = await UbCBf8rh6(...args,);
+      if (res === false) {
+        return false;
+      }
+    }
+  },);
+  const onClick12ohw6h = activeVariantCallback(async (...args) => {
+    if (l4EmAYs9B) {
+      const res = await l4EmAYs9B(...args,);
+      if (res === false) {
+        return false;
+      }
+    }
+  },);
+  const onClick1o9a5v = activeVariantCallback(async (...args) => {
+    if (o2wfaBicH) {
+      const res = await o2wfaBicH(...args,);
+      if (res === false) {
+        return false;
+      }
+    }
+  },);
+  const ref1 = React.useRef(null,);
+  const defaultLayoutId = React.useId();
+  const sharedStyleClassNames = [];
+  const componentViewport = useComponentViewport();
+  return /* @__PURE__ */ _jsx(LayoutGroup, {
+    id: layoutId !== null && layoutId !== void 0 ? layoutId : defaultLayoutId,
+    children: /* @__PURE__ */ _jsx(Variants, {
+      animate: variants,
+      initial: false,
+      children: /* @__PURE__ */ _jsx(Transition, {
+        value: transition1,
+        children: /* @__PURE__ */ _jsxs(motion.div, {
+          ...restProps,
+          className: cx(serializationHash, ...sharedStyleClassNames, 'framer-1albic8', className2, classNames,),
+          'data-framer-name': 'Variant 1',
+          layoutDependency,
+          layoutId: 'O5TDOtZUz',
+          onHoverEnd: () => setGestureState({ isHovered: false, },),
+          onHoverStart: () => setGestureState({ isHovered: true, },),
+          onTap: () => setGestureState({ isPressed: false, },),
+          onTapCancel: () => setGestureState({ isPressed: false, },),
+          onTapStart: () => setGestureState({ isPressed: true, },),
+          ref: ref !== null && ref !== void 0 ? ref : ref1,
+          style: { backgroundColor: 'rgb(255, 121, 173)', ...style, },
+          children: [
+            /* @__PURE__ */ _jsx(ComponentViewportProvider, {
+              children: /* @__PURE__ */ _jsx(motion.div, {
+                className: 'framer-1txh96z-container',
+                'data-framer-name': 'icon-settings',
+                layoutDependency,
+                layoutId: 'zi1DMnvqr-container',
+                name: 'icon-settings',
+                children: /* @__PURE__ */ _jsx(Icon, {
+                  color: 'rgb(255, 255, 255)',
+                  height: '100%',
+                  iconSearch: 'settings',
+                  iconSelection: 'KeyframesCouple',
+                  id: 'zi1DMnvqr',
+                  layoutId: 'zi1DMnvqr',
+                  mirrored: false,
+                  name: 'icon-settings',
+                  onClick: onClick7mzv26,
+                  selectByList: false,
+                  style: { height: '100%', width: '100%', },
+                  width: '100%',
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx(ComponentViewportProvider, {
+              children: /* @__PURE__ */ _jsx(motion.div, {
+                className: 'framer-1jx5hek-container',
+                'data-framer-name': 'icon-health',
+                layoutDependency,
+                layoutId: 'kcKlzxzEa-container',
+                name: 'icon-health',
+                children: /* @__PURE__ */ _jsx(Icon, {
+                  color: 'rgb(255, 255, 255)',
+                  height: '100%',
+                  iconSearch: 'kayframe',
+                  iconSelection: 'KeyframesCouple',
+                  id: 'kcKlzxzEa',
+                  layoutId: 'kcKlzxzEa',
+                  mirrored: false,
+                  name: 'icon-health',
+                  onClick: onClick12ohw6h,
+                  selectByList: true,
+                  style: { height: '100%', width: '100%', },
+                  width: '100%',
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx(ComponentViewportProvider, {
+              children: /* @__PURE__ */ _jsx(motion.div, {
+                className: 'framer-1jnmkwc-container',
+                'data-framer-name': 'icon-chat',
+                layoutDependency,
+                layoutId: 'eg343YrlN-container',
+                name: 'icon-chat',
+                children: /* @__PURE__ */ _jsx(Icon, {
+                  color: 'rgb(255, 255, 255)',
+                  height: '100%',
+                  iconSearch: 'chatbubble',
+                  iconSelection: 'ChatBubble',
+                  id: 'eg343YrlN',
+                  layoutId: 'eg343YrlN',
+                  mirrored: false,
+                  name: 'icon-chat',
+                  onClick: onClick1o9a5v,
+                  selectByList: false,
+                  style: { height: '100%', width: '100%', },
+                  width: '100%',
+                },),
+              },),
+            },),
+          ],
+        },),
+      },),
+    },),
+  },);
+},);
+var css2 = [
+  '@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }',
+  '.framer-3E4C1.framer-zarw9n, .framer-3E4C1 .framer-zarw9n { display: block; }',
+  '.framer-3E4C1.framer-1albic8 { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; gap: 80px; height: 81px; justify-content: center; overflow: hidden; padding: 0px; position: relative; width: 390px; }',
+  '.framer-3E4C1 .framer-1txh96z-container, .framer-3E4C1 .framer-1jx5hek-container, .framer-3E4C1 .framer-1jnmkwc-container { flex: none; height: 37px; position: relative; width: 37px; }',
+  '@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) { .framer-3E4C1.framer-1albic8 { gap: 0px; } .framer-3E4C1.framer-1albic8 > * { margin: 0px; margin-left: calc(80px / 2); margin-right: calc(80px / 2); } .framer-3E4C1.framer-1albic8 > :first-child { margin-left: 0px; } .framer-3E4C1.framer-1albic8 > :last-child { margin-right: 0px; } }',
+];
+var FramerBGUN3CRKp = withCSS(Component, css2, 'framer-3E4C1',);
+var stdin_default = FramerBGUN3CRKp;
+FramerBGUN3CRKp.displayName = 'navbar';
+FramerBGUN3CRKp.defaultProps = { height: 81, width: 390, };
+addPropertyControls(FramerBGUN3CRKp, {
+  UbCBf8rh6: { title: 'Tap', type: ControlType.EventHandler, },
+  l4EmAYs9B: { title: 'Tap 2', type: ControlType.EventHandler, },
+  o2wfaBicH: { title: 'Tap 3', type: ControlType.EventHandler, },
+},);
+addFonts(FramerBGUN3CRKp, [{ explicitInter: true, fonts: [], }, ...IconoirFonts,], { supportsExplicitInterCodegen: true, },);
+
+// https :https://framerusercontent.com/modules/cXTaKi4vytBfDn1r1821/2Y8PnW9SjYME6r5emfxg/fLExZKtD2.js
+import { jsx as _jsx5, jsxs as _jsxs4, } from 'react/jsx-runtime';
+import {
+  addFonts as addFonts4,
+  ComponentViewportProvider as ComponentViewportProvider4,
+  cx as cx4,
+  getFonts as getFonts4,
+  getFontsFromSharedStyle,
+  RichText,
+  Scroll,
+  useComponentViewport as useComponentViewport4,
+  useLocaleInfo as useLocaleInfo4,
+  useVariantState as useVariantState4,
+  withCSS as withCSS4,
+} from 'unframer';
+import { LayoutGroup as LayoutGroup4, motion as motion4, MotionConfigContext as MotionConfigContext4, } from 'unframer';
+import * as React4 from 'react';
 
 // https :https://framerusercontent.com/modules/xFhv3ETdRBLjJusGaZ1P/d9ZONLqTB9uCj5kbWKll/Globe.js
-import { jsx as _jsx, } from 'react/jsx-runtime';
-import { addPropertyControls, Color, ControlType, RenderTarget, } from 'unframer';
-import { useEffect, useRef, } from 'react';
+import { jsx as _jsx2, } from 'react/jsx-runtime';
+import { addPropertyControls as addPropertyControls2, Color, ControlType as ControlType2, RenderTarget, } from 'unframer';
+import { useEffect, useRef as useRef2, } from 'react';
 
 // https :https://esm.sh/v135/phenomenon@1.6.0/esnext/phenomenon.mjs
 var m = ['x', 'y', 'z',];
@@ -371,9 +576,9 @@ function Globe(props,) {
   } = props;
   const { offsetX, offsetY, } = offset;
   const { stiffness, damping, mass, } = dragOptions;
-  const canvasRef = useRef();
-  const pointerInteracting = useRef(null,);
-  const pointerInteractionMovement = useRef(0,);
+  const canvasRef = useRef2();
+  const pointerInteracting = useRef2(null,);
+  const pointerInteractionMovement = useRef2(0,);
   const isCanvas = RenderTarget.current() === RenderTarget.canvas;
   const r = useSpring(0, { stiffness, damping, mass, restDelta: 1e-4, restSpeed: 1e-4, },);
   const fadeMask = 'radial-gradient(circle at 50% 50%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 70%)';
@@ -423,11 +628,11 @@ function Globe(props,) {
       globe.destroy();
     };
   }, [props,],);
-  return /* @__PURE__ */ _jsx('div', {
+  return /* @__PURE__ */ _jsx2('div', {
     style: { ...flexStyles, placeItems: alignment, background, },
-    children: /* @__PURE__ */ _jsx('div', {
+    children: /* @__PURE__ */ _jsx2('div', {
       style: { width: '100%', aspectRatio: '1/1', maxWidth, WebkitMaskImage: fadeMask, MozMaskImage: fadeMask, maskImage: fadeMask, },
-      children: /* @__PURE__ */ _jsx('canvas', {
+      children: /* @__PURE__ */ _jsx2('canvas', {
         ref: canvasRef,
         style: { width: '100%', height: '100%', contain: 'layout paint size', cursor: 'auto', userSelect: 'none', },
         onPointerDown: (e,) => {
@@ -498,60 +703,60 @@ Globe.displayName = 'Globe';
 var dp = Globe.defaultProps;
 var dpOffset = Globe.defaultProps.offset;
 var dpDrag = Globe.defaultProps.dragOptions;
-addPropertyControls(Globe, {
-  background: { type: ControlType.Color, title: 'Backdrop', defaultValue: dp.background, },
-  baseColor: { type: ControlType.Color, title: 'Base', defaultValue: dp.baseColor, },
-  glowColor: { type: ControlType.Color, title: 'Glow', defaultValue: dp.glowColor, },
-  markerColor: { type: ControlType.Color, title: 'Marker', defaultValue: dp.markerColor, },
-  isDraggable: { type: ControlType.Boolean, title: 'Draggable', defaultValue: dp.isDraggable, },
+addPropertyControls2(Globe, {
+  background: { type: ControlType2.Color, title: 'Backdrop', defaultValue: dp.background, },
+  baseColor: { type: ControlType2.Color, title: 'Base', defaultValue: dp.baseColor, },
+  glowColor: { type: ControlType2.Color, title: 'Glow', defaultValue: dp.glowColor, },
+  markerColor: { type: ControlType2.Color, title: 'Marker', defaultValue: dp.markerColor, },
+  isDraggable: { type: ControlType2.Boolean, title: 'Draggable', defaultValue: dp.isDraggable, },
   dragOptions: {
-    type: ControlType.Object,
+    type: ControlType2.Object,
     title: 'Transition',
     controls: {
-      stiffness: { type: ControlType.Number, min: 0, max: 1e3, title: 'Stiffness', defaultValue: dpDrag.stiffness, },
-      damping: { type: ControlType.Number, min: 0, max: 100, title: 'Damping', defaultValue: dpDrag.damping, },
-      mass: { type: ControlType.Number, min: 0, title: 'Mass', displayStepper: true, defaultValue: dpDrag.mass, },
+      stiffness: { type: ControlType2.Number, min: 0, max: 1e3, title: 'Stiffness', defaultValue: dpDrag.stiffness, },
+      damping: { type: ControlType2.Number, min: 0, max: 100, title: 'Damping', defaultValue: dpDrag.damping, },
+      mass: { type: ControlType2.Number, min: 0, title: 'Mass', displayStepper: true, defaultValue: dpDrag.mass, },
     },
     hidden(props,) {
       return !props.isDraggable;
     },
   },
-  speed: { type: ControlType.Number, min: 0, step: 0.1, displayStepper: true, title: 'Speed', defaultValue: dp.speed, },
-  phi: { type: ControlType.Number, min: 0, max: 6.28, step: 0.01, displayStepper: true, title: 'Phi', defaultValue: dp.phi, },
-  theta: { type: ControlType.Number, min: -1.57, max: 1.57, step: 0.01, title: 'Theta', defaultValue: dp.theta, },
-  dark: { type: ControlType.Number, min: 0, max: 1, step: 0.1, displayStepper: true, title: 'Dark', defaultValue: dp.dark, },
-  diffuse: { type: ControlType.Number, min: 0, max: 5, step: 0.01, title: 'Diffuse', defaultValue: dp.diffuse, },
-  mapBrightness: { type: ControlType.Number, min: 0, max: 12, step: 0.01, title: 'Brightness', defaultValue: dp.mapBrightness, },
-  maxSamples: { type: ControlType.Number, min: 0, max: 1e5, title: 'Samples', defaultValue: dp.maxSamples, },
-  scale: { type: ControlType.Number, min: 0, max: 5, step: 0.025, displayStepper: true, title: 'Scale', defaultValue: dp.scale, },
+  speed: { type: ControlType2.Number, min: 0, step: 0.1, displayStepper: true, title: 'Speed', defaultValue: dp.speed, },
+  phi: { type: ControlType2.Number, min: 0, max: 6.28, step: 0.01, displayStepper: true, title: 'Phi', defaultValue: dp.phi, },
+  theta: { type: ControlType2.Number, min: -1.57, max: 1.57, step: 0.01, title: 'Theta', defaultValue: dp.theta, },
+  dark: { type: ControlType2.Number, min: 0, max: 1, step: 0.1, displayStepper: true, title: 'Dark', defaultValue: dp.dark, },
+  diffuse: { type: ControlType2.Number, min: 0, max: 5, step: 0.01, title: 'Diffuse', defaultValue: dp.diffuse, },
+  mapBrightness: { type: ControlType2.Number, min: 0, max: 12, step: 0.01, title: 'Brightness', defaultValue: dp.mapBrightness, },
+  maxSamples: { type: ControlType2.Number, min: 0, max: 1e5, title: 'Samples', defaultValue: dp.maxSamples, },
+  scale: { type: ControlType2.Number, min: 0, max: 5, step: 0.025, displayStepper: true, title: 'Scale', defaultValue: dp.scale, },
   alignment: {
-    type: ControlType.Enum,
+    type: ControlType2.Enum,
     title: 'Align',
     options: ['flex-start', 'center', 'flex-end',],
     optionIcons: ['align-top', 'align-middle', 'align-bottom',],
     defaultValue: dp.alignment,
     displaySegmentedControl: true,
   },
-  maxWidth: { type: ControlType.Number, title: 'Max Width', min: 100, max: 5e3, defaultValue: dp.maxWidth, },
+  maxWidth: { type: ControlType2.Number, title: 'Max Width', min: 100, max: 5e3, defaultValue: dp.maxWidth, },
   offset: {
-    type: ControlType.Object,
+    type: ControlType2.Object,
     title: 'Offset',
     controls: {
-      offsetX: { type: ControlType.Number, min: -5e3, max: 5e3, title: 'X', defaultValue: dpOffset.offsetX, },
-      offsetY: { type: ControlType.Number, min: -5e3, max: 5e3, title: 'Y', defaultValue: dpOffset.offsetY, },
+      offsetX: { type: ControlType2.Number, min: -5e3, max: 5e3, title: 'X', defaultValue: dpOffset.offsetX, },
+      offsetY: { type: ControlType2.Number, min: -5e3, max: 5e3, title: 'Y', defaultValue: dpOffset.offsetY, },
     },
   },
-  markerSize: { type: ControlType.Number, min: 0, max: 1, step: 0.01, title: 'Markers', defaultValue: dp.markerSize, },
+  markerSize: { type: ControlType2.Number, min: 0, max: 1, step: 0.01, title: 'Markers', defaultValue: dp.markerSize, },
   markerArray: {
-    type: ControlType.Array,
+    type: ControlType2.Array,
     title: 'Location',
     // defaultValue: [{ latitude: 52.3676, longitude: 4.9041 }],
     control: {
-      type: ControlType.Object,
+      type: ControlType2.Object,
       title: 'Location',
       controls: {
-        latitude: { type: ControlType.Number, min: -90, max: 90, title: 'Lat', step: 1e-4, defaultValue: dp.markerArray.latitude, },
-        longitude: { type: ControlType.Number, min: -180, max: 180, title: 'Long', step: 1e-4, defaultValue: dp.markerArray.longitude, },
+        latitude: { type: ControlType2.Number, min: -90, max: 90, title: 'Lat', step: 1e-4, defaultValue: dp.markerArray.latitude, },
+        longitude: { type: ControlType2.Number, min: -180, max: 180, title: 'Long', step: 1e-4, defaultValue: dp.markerArray.longitude, },
       },
     },
   },
@@ -561,95 +766,78 @@ var convertRGB = (color,) => {
   return { r: Color(color,).r / 255, g: Color(color,).g / 255, b: Color(color,).b / 255, };
 };
 
-// https :https://framerusercontent.com/modules/cOBZ24ERfie5L39kiB0e/sdaQyX2ERzlhLc9qV1EB/a4fbduHHq.js
-var ClockFonts = getFonts(Clock,);
-var IconoirFonts = getFonts(Icon,);
-var ConicFonts = getFonts(Conic,);
-var GlobeFonts = getFonts(Globe,);
-var cycleOrder = ['HmGvKmFVu',];
-var serializationHash = 'framer-FfuU5';
-var variantClassNames = { HmGvKmFVu: 'framer-v-cu5isx', };
-var transition1 = { damping: 60, delay: 0, mass: 1, stiffness: 500, type: 'spring', };
-var transformTemplate1 = (_, t,) => `translateX(-50%) ${t}`;
-var transformTemplate2 = (_, t,) => `translateY(-50%) ${t}`;
-var transformTemplate3 = (_, t,) => `translate(-50%, -50%) ${t}`;
-var Transition = ({ value, children, },) => {
-  const config = React.useContext(MotionConfigContext,);
+// https :https://framerusercontent.com/modules/LUHr7AaF8n6aYR9A4VJD/LGXF6jC9dehR0S4C6leT/NaTB7MiaZ.js
+import { jsx as _jsx3, jsxs as _jsxs2, } from 'react/jsx-runtime';
+import {
+  addFonts as addFonts2,
+  addPropertyControls as addPropertyControls3,
+  ComponentViewportProvider as ComponentViewportProvider2,
+  ControlType as ControlType3,
+  cx as cx2,
+  getFonts as getFonts2,
+  useActiveVariantCallback as useActiveVariantCallback2,
+  useComponentViewport as useComponentViewport2,
+  useLocaleInfo as useLocaleInfo2,
+  useVariantState as useVariantState2,
+  withCSS as withCSS2,
+} from 'unframer';
+import { LayoutGroup as LayoutGroup2, motion as motion2, MotionConfigContext as MotionConfigContext2, } from 'unframer';
+import * as React2 from 'react';
+var ConicFonts = getFonts2(Conic,);
+var ClockFonts = getFonts2(Clock,);
+var cycleOrder2 = ['DNAgQW0Bv',];
+var serializationHash2 = 'framer-ntB1z';
+var variantClassNames2 = { DNAgQW0Bv: 'framer-v-fefz7t', };
+var transition12 = { damping: 60, delay: 0, mass: 1, stiffness: 500, type: 'spring', };
+var transformTemplate1 = (_, t,) => `translateY(-50%) ${t}`;
+var transformTemplate2 = (_, t,) => `translate(-50%, -50%) ${t}`;
+var Transition2 = ({ value, children, },) => {
+  const config = React2.useContext(MotionConfigContext2,);
   const transition = value !== null && value !== void 0 ? value : config.transition;
-  const contextValue = React.useMemo(() => ({ ...config, transition, }), [JSON.stringify(transition,),],);
-  return /* @__PURE__ */ _jsx2(MotionConfigContext.Provider, { value: contextValue, children, },);
+  const contextValue = React2.useMemo(() => ({ ...config, transition, }), [JSON.stringify(transition,),],);
+  return /* @__PURE__ */ _jsx3(MotionConfigContext2.Provider, { value: contextValue, children, },);
 };
-var Variants = motion(React.Fragment,);
-var getProps = ({ height, id, tap, tap2, tap3, tap4, width, ...props },) => {
-  return {
-    ...props,
-    Fx4ipBJTf: tap2 !== null && tap2 !== void 0 ? tap2 : props.Fx4ipBJTf,
-    h6UG5esH9: tap4 !== null && tap4 !== void 0 ? tap4 : props.h6UG5esH9,
-    Nm_Wn7C7e: tap !== null && tap !== void 0 ? tap : props.Nm_Wn7C7e,
-    vWkvp9dsR: tap3 !== null && tap3 !== void 0 ? tap3 : props.vWkvp9dsR,
-  };
+var Variants2 = motion2(React2.Fragment,);
+var getProps2 = ({ height, id, tap, width, ...props },) => {
+  return { ...props, I2ahzVrBC: tap !== null && tap !== void 0 ? tap : props.I2ahzVrBC, };
 };
-var createLayoutDependency = (props, variants,) => variants.join('-',) + props.layoutDependency;
-var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
-  const { activeLocale, setLocale, } = useLocaleInfo();
-  const { style, className: className2, layoutId, variant, Nm_Wn7C7e, Fx4ipBJTf, vWkvp9dsR, h6UG5esH9, ...restProps } = getProps(props,);
-  const { baseVariant, classNames, gestureVariant, setGestureState, setVariant, variants, } = useVariantState({
-    cycleOrder,
-    defaultVariant: 'HmGvKmFVu',
+var createLayoutDependency2 = (props, variants,) => variants.join('-',) + props.layoutDependency;
+var Component2 = /* @__PURE__ */ React2.forwardRef(function (props, ref,) {
+  const { activeLocale, setLocale, } = useLocaleInfo2();
+  const { style, className: className2, layoutId, variant, I2ahzVrBC, ...restProps } = getProps2(props,);
+  const { baseVariant, classNames, gestureVariant, setGestureState, setVariant, variants, } = useVariantState2({
+    cycleOrder: cycleOrder2,
+    defaultVariant: 'DNAgQW0Bv',
     variant,
-    variantClassNames,
+    variantClassNames: variantClassNames2,
   },);
-  const layoutDependency = createLayoutDependency(props, variants,);
-  const { activeVariantCallback, delay, } = useActiveVariantCallback(baseVariant,);
-  const onTapcli6fb = activeVariantCallback(async (...args) => {
-    if (Nm_Wn7C7e) {
-      const res = await Nm_Wn7C7e(...args,);
+  const layoutDependency = createLayoutDependency2(props, variants,);
+  const { activeVariantCallback, delay, } = useActiveVariantCallback2(baseVariant,);
+  const onClickmvgvsu = activeVariantCallback(async (...args) => {
+    if (I2ahzVrBC) {
+      const res = await I2ahzVrBC(...args,);
       if (res === false) {
         return false;
       }
     }
   },);
-  const onClick10201fo = activeVariantCallback(async (...args) => {
-    if (Fx4ipBJTf) {
-      const res = await Fx4ipBJTf(...args,);
-      if (res === false) {
-        return false;
-      }
-    }
-  },);
-  const onClickdfmpom = activeVariantCallback(async (...args) => {
-    if (vWkvp9dsR) {
-      const res = await vWkvp9dsR(...args,);
-      if (res === false) {
-        return false;
-      }
-    }
-  },);
-  const onClick1dhtbjt = activeVariantCallback(async (...args) => {
-    if (h6UG5esH9) {
-      const res = await h6UG5esH9(...args,);
-      if (res === false) {
-        return false;
-      }
-    }
-  },);
-  const ref1 = React.useRef(null,);
-  const defaultLayoutId = React.useId();
-  const sharedStyleClassNames = [className,];
-  const componentViewport = useComponentViewport();
-  return /* @__PURE__ */ _jsx2(LayoutGroup, {
+  const ref1 = React2.useRef(null,);
+  const defaultLayoutId = React2.useId();
+  const sharedStyleClassNames = [];
+  const componentViewport = useComponentViewport2();
+  return /* @__PURE__ */ _jsx3(LayoutGroup2, {
     id: layoutId !== null && layoutId !== void 0 ? layoutId : defaultLayoutId,
-    children: /* @__PURE__ */ _jsx2(Variants, {
+    children: /* @__PURE__ */ _jsx3(Variants2, {
       animate: variants,
       initial: false,
-      children: /* @__PURE__ */ _jsx2(Transition, {
-        value: transition1,
-        children: /* @__PURE__ */ _jsxs(motion.div, {
+      children: /* @__PURE__ */ _jsx3(Transition2, {
+        value: transition12,
+        children: /* @__PURE__ */ _jsxs2(motion2.div, {
           ...restProps,
-          className: cx(serializationHash, ...sharedStyleClassNames, 'framer-cu5isx', className2, classNames,),
+          className: cx2(serializationHash2, ...sharedStyleClassNames, 'framer-fefz7t', className2, classNames,),
           'data-framer-name': 'Variant 1',
           layoutDependency,
-          layoutId: 'HmGvKmFVu',
+          layoutId: 'DNAgQW0Bv',
           onHoverEnd: () => setGestureState({ isHovered: false, },),
           onHoverStart: () => setGestureState({ isHovered: true, },),
           onTap: () => setGestureState({ isPressed: false, },),
@@ -658,870 +846,1018 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
           ref: ref !== null && ref !== void 0 ? ref : ref1,
           style: { backgroundColor: 'rgb(255, 255, 255)', ...style, },
           children: [
-            /* @__PURE__ */ _jsx2(motion.div, {
-              className: 'framer-h3p0s1',
-              layoutDependency,
-              layoutId: 'EeZ9O38Uw',
-              style: { backgroundColor: 'rgb(255, 121, 173)', },
+            /* @__PURE__ */ _jsx3(ComponentViewportProvider2, {
+              children: /* @__PURE__ */ _jsx3(motion2.div, {
+                className: 'framer-1cgw7lr-container',
+                layoutDependency,
+                layoutId: 'mExa7m2IC-container',
+                children: /* @__PURE__ */ _jsx3(Conic, {
+                  blur: 17,
+                  colors: 'cyan, magenta, yellow, cyan',
+                  from: 0,
+                  height: '100%',
+                  id: 'mExa7m2IC',
+                  layoutId: 'mExa7m2IC',
+                  onClick: onClickmvgvsu,
+                  radius: 126,
+                  style: { height: '100%', width: '100%', },
+                  width: '100%',
+                  xPos: 91,
+                  yPos: 50,
+                },),
+              },),
             },),
-            /* @__PURE__ */ _jsxs(Image2, {
-              background: {
-                alt: '',
-                fit: 'fill',
-                intrinsicHeight: 2250,
-                intrinsicWidth: 1100,
-                pixelHeight: 4500,
-                pixelWidth: 2200,
-                sizes: (componentViewport === null || componentViewport === void 0 ? void 0 : componentViewport.width) || '100vw',
-                src: 'https://framerusercontent.com/images/1uEO3pFZ5OW3cGbOe0iL7EkeHN0.png?scale-down-to=4096',
-                srcSet:
-                  'https://framerusercontent.com/images/1uEO3pFZ5OW3cGbOe0iL7EkeHN0.png?scale-down-to=2048 1001w,https://framerusercontent.com/images/1uEO3pFZ5OW3cGbOe0iL7EkeHN0.png?scale-down-to=4096 2002w,https://framerusercontent.com/images/1uEO3pFZ5OW3cGbOe0iL7EkeHN0.png 2200w',
-              },
-              className: 'framer-emedg8',
-              'data-framer-name': 'iphone14pro',
+            /* @__PURE__ */ _jsx3(ComponentViewportProvider2, {
+              children: /* @__PURE__ */ _jsx3(motion2.div, {
+                className: 'framer-1eoi0vx-container',
+                layoutDependency,
+                layoutId: 'd5VNH5Vnt-container',
+                children: /* @__PURE__ */ _jsx3(Conic, {
+                  blur: 17,
+                  colors: 'cyan, magenta, yellow, cyan',
+                  from: 0,
+                  height: '100%',
+                  id: 'd5VNH5Vnt',
+                  layoutId: 'd5VNH5Vnt',
+                  radius: 126,
+                  style: { height: '100%', width: '100%', },
+                  width: '100%',
+                  xPos: 42,
+                  yPos: 0,
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx3(ComponentViewportProvider2, {
+              children: /* @__PURE__ */ _jsx3(motion2.div, {
+                className: 'framer-1zd7n7-container',
+                layoutDependency,
+                layoutId: 'cwYSoNkAw-container',
+                children: /* @__PURE__ */ _jsx3(Conic, {
+                  blur: 17,
+                  colors: 'cyan, magenta, yellow, cyan',
+                  from: 0,
+                  height: '100%',
+                  id: 'cwYSoNkAw',
+                  layoutId: 'cwYSoNkAw',
+                  radius: 126,
+                  style: { height: '100%', width: '100%', },
+                  width: '100%',
+                  xPos: 55,
+                  yPos: 36,
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx3(ComponentViewportProvider2, {
+              children: /* @__PURE__ */ _jsx3(motion2.div, {
+                className: 'framer-tukekt-container',
+                layoutDependency,
+                layoutId: 'z0eYEysfs-container',
+                children: /* @__PURE__ */ _jsx3(Conic, {
+                  blur: 17,
+                  colors: 'cyan, magenta, yellow, cyan',
+                  from: 0,
+                  height: '100%',
+                  id: 'z0eYEysfs',
+                  layoutId: 'z0eYEysfs',
+                  radius: 126,
+                  style: { height: '100%', width: '100%', },
+                  width: '100%',
+                  xPos: 100,
+                  yPos: 100,
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx3(ComponentViewportProvider2, {
+              children: /* @__PURE__ */ _jsx3(motion2.div, {
+                className: 'framer-hhva42-container',
+                layoutDependency,
+                layoutId: 'erCfiWZeI-container',
+                children: /* @__PURE__ */ _jsx3(Conic, {
+                  blur: 17,
+                  colors: 'cyan, magenta, yellow, cyan',
+                  from: 0,
+                  height: '100%',
+                  id: 'erCfiWZeI',
+                  layoutId: 'erCfiWZeI',
+                  radius: 126,
+                  style: { height: '100%', width: '100%', },
+                  width: '100%',
+                  xPos: 42,
+                  yPos: 0,
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx3(ComponentViewportProvider2, {
+              children: /* @__PURE__ */ _jsx3(motion2.div, {
+                className: 'framer-rc6yop-container',
+                layoutDependency,
+                layoutId: 'p5t28h7wK-container',
+                transformTemplate: transformTemplate1,
+                children: /* @__PURE__ */ _jsx3(Clock, {
+                  ampmCase: 'uppercase',
+                  color: 'rgb(0, 0, 0)',
+                  font: {
+                    fontFamily: '"Inter", sans-serif',
+                    fontSize: '22px',
+                    fontStyle: 'normal',
+                    letterSpacing: '0em',
+                    lineHeight: '1em',
+                  },
+                  height: '100%',
+                  id: 'p5t28h7wK',
+                  is12hour: true,
+                  layoutId: 'p5t28h7wK',
+                  prefix: '',
+                  seconds: true,
+                  style: { width: '100%', },
+                  suffix: '',
+                  textSelect: true,
+                  timeZone: false,
+                  width: '100%',
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx3(motion2.div, { className: 'framer-koo07p', layoutDependency, layoutId: 'UE9biDFiR', },),
+            /* @__PURE__ */ _jsx3(ComponentViewportProvider2, {
+              children: /* @__PURE__ */ _jsx3(motion2.div, {
+                className: 'framer-m7o9z1-container',
+                layoutDependency,
+                layoutId: 'OfwgIR2eQ-container',
+                transformTemplate: transformTemplate1,
+                children: /* @__PURE__ */ _jsx3(Clock, {
+                  ampmCase: 'uppercase',
+                  color: 'rgb(0, 0, 0)',
+                  font: {
+                    fontFamily: '"Inter", sans-serif',
+                    fontSize: '22px',
+                    fontStyle: 'normal',
+                    letterSpacing: '0em',
+                    lineHeight: '1em',
+                  },
+                  height: '100%',
+                  id: 'OfwgIR2eQ',
+                  is12hour: true,
+                  layoutId: 'OfwgIR2eQ',
+                  prefix: '',
+                  seconds: true,
+                  style: { width: '100%', },
+                  suffix: '',
+                  textSelect: true,
+                  timeZone: false,
+                  width: '100%',
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx3(motion2.div, { className: 'framer-m5smwr', layoutDependency, layoutId: 'D8NzNigY2', },),
+            /* @__PURE__ */ _jsx3(ComponentViewportProvider2, {
+              children: /* @__PURE__ */ _jsx3(motion2.div, {
+                className: 'framer-129xavi-container',
+                layoutDependency,
+                layoutId: 'P6FwUg9RB-container',
+                transformTemplate: transformTemplate2,
+                children: /* @__PURE__ */ _jsx3(Clock, {
+                  ampmCase: 'uppercase',
+                  color: 'rgb(0, 0, 0)',
+                  font: {
+                    fontFamily: '"Inter", sans-serif',
+                    fontSize: '22px',
+                    fontStyle: 'normal',
+                    letterSpacing: '0em',
+                    lineHeight: '1em',
+                  },
+                  height: '100%',
+                  id: 'P6FwUg9RB',
+                  is12hour: true,
+                  layoutId: 'P6FwUg9RB',
+                  prefix: '',
+                  seconds: true,
+                  style: { width: '100%', },
+                  suffix: '',
+                  textSelect: true,
+                  timeZone: false,
+                  width: '100%',
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx3(motion2.div, { className: 'framer-7gp9vw', layoutDependency, layoutId: 'ndB4wlOcR', },),
+            /* @__PURE__ */ _jsx3(ComponentViewportProvider2, {
+              children: /* @__PURE__ */ _jsx3(motion2.div, {
+                className: 'framer-1ay2b39-container',
+                layoutDependency,
+                layoutId: 'hrg3erol8-container',
+                transformTemplate: transformTemplate1,
+                children: /* @__PURE__ */ _jsx3(Clock, {
+                  ampmCase: 'uppercase',
+                  color: 'rgb(0, 0, 0)',
+                  font: {
+                    fontFamily: '"Inter", sans-serif',
+                    fontSize: '22px',
+                    fontStyle: 'normal',
+                    letterSpacing: '0em',
+                    lineHeight: '1em',
+                  },
+                  height: '100%',
+                  id: 'hrg3erol8',
+                  is12hour: true,
+                  layoutId: 'hrg3erol8',
+                  prefix: '',
+                  seconds: true,
+                  style: { width: '100%', },
+                  suffix: '',
+                  textSelect: true,
+                  timeZone: false,
+                  width: '100%',
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx3(motion2.div, { className: 'framer-17l78v9', layoutDependency, layoutId: 'j2VWVHPa0', },),
+            /* @__PURE__ */ _jsx3(ComponentViewportProvider2, {
+              children: /* @__PURE__ */ _jsx3(motion2.div, {
+                className: 'framer-jjr1ep-container',
+                layoutDependency,
+                layoutId: 'i5ekIdJLO-container',
+                transformTemplate: transformTemplate1,
+                children: /* @__PURE__ */ _jsx3(Clock, {
+                  ampmCase: 'uppercase',
+                  color: 'rgb(0, 0, 0)',
+                  font: {
+                    fontFamily: '"Inter", sans-serif',
+                    fontSize: '22px',
+                    fontStyle: 'normal',
+                    letterSpacing: '0em',
+                    lineHeight: '1em',
+                  },
+                  height: '100%',
+                  id: 'i5ekIdJLO',
+                  is12hour: true,
+                  layoutId: 'i5ekIdJLO',
+                  prefix: '',
+                  seconds: true,
+                  style: { width: '100%', },
+                  suffix: '',
+                  textSelect: true,
+                  timeZone: false,
+                  width: '100%',
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx3(motion2.div, { className: 'framer-f4i1k8', layoutDependency, layoutId: 'yTrh5pAqg', },),
+          ],
+        },),
+      },),
+    },),
+  },);
+},);
+var css3 = [
+  '@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }',
+  '.framer-ntB1z.framer-1mt9fd, .framer-ntB1z .framer-1mt9fd { display: block; }',
+  '.framer-ntB1z.framer-fefz7t { height: 183px; overflow: hidden; position: relative; width: 807px; }',
+  '.framer-ntB1z .framer-1cgw7lr-container { flex: none; height: 150px; left: 6px; position: absolute; top: calc(50.00000000000002% - 150px / 2); width: 150px; }',
+  '.framer-ntB1z .framer-1eoi0vx-container { flex: none; height: 150px; left: 164px; position: absolute; top: calc(50.00000000000002% - 150px / 2); width: 149px; }',
+  '.framer-ntB1z .framer-1zd7n7-container { flex: none; height: 150px; left: calc(48.949320148331296% - 150px / 2); position: absolute; top: calc(50.00000000000002% - 150px / 2); width: 150px; }',
+  '.framer-ntB1z .framer-tukekt-container { flex: none; height: 150px; position: absolute; right: 181px; top: calc(50.00000000000002% - 150px / 2); width: 149px; }',
+  '.framer-ntB1z .framer-hhva42-container { flex: none; height: 150px; position: absolute; right: 23px; top: calc(50.00000000000002% - 150px / 2); width: 150px; }',
+  '.framer-ntB1z .framer-rc6yop-container { flex: none; height: auto; left: 51px; position: absolute; top: 51%; width: 79px; }',
+  '.framer-ntB1z .framer-koo07p { flex: none; height: 15px; left: 54px; overflow: visible; position: absolute; top: calc(50.27322404371587% - 15px / 2); width: 64px; }',
+  '.framer-ntB1z .framer-m7o9z1-container { flex: none; height: auto; left: 210px; position: absolute; top: 51%; width: 79px; }',
+  '.framer-ntB1z .framer-m5smwr { flex: none; height: 15px; left: 213px; overflow: visible; position: absolute; top: calc(50.27322404371587% - 15px / 2); width: 64px; }',
+  '.framer-ntB1z .framer-129xavi-container { flex: none; height: auto; left: 50%; position: absolute; top: 51%; width: 79px; }',
+  '.framer-ntB1z .framer-7gp9vw { flex: none; height: 15px; left: calc(49.5662949194548% - 64px / 2); overflow: visible; position: absolute; top: calc(50.27322404371587% - 15px / 2); width: 64px; }',
+  '.framer-ntB1z .framer-1ay2b39-container { flex: none; height: auto; position: absolute; right: 207px; top: 51%; width: 79px; }',
+  '.framer-ntB1z .framer-17l78v9 { flex: none; height: 15px; overflow: visible; position: absolute; right: 218px; top: calc(50.27322404371587% - 15px / 2); width: 64px; }',
+  '.framer-ntB1z .framer-jjr1ep-container { flex: none; height: auto; position: absolute; right: 45px; top: 51%; width: 79px; }',
+  '.framer-ntB1z .framer-f4i1k8 { flex: none; height: 15px; overflow: visible; position: absolute; right: 56px; top: calc(50.27322404371587% - 15px / 2); width: 64px; }',
+];
+var FramerNaTB7MiaZ = withCSS2(Component2, css3, 'framer-ntB1z',);
+var stdin_default2 = FramerNaTB7MiaZ;
+FramerNaTB7MiaZ.displayName = 'scroll-MAIN-nearby';
+FramerNaTB7MiaZ.defaultProps = { height: 183, width: 807, };
+addPropertyControls3(FramerNaTB7MiaZ, { I2ahzVrBC: { title: 'Tap', type: ControlType3.EventHandler, }, },);
+addFonts2(FramerNaTB7MiaZ, [
+  {
+    explicitInter: true,
+    fonts: [{
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      url: 'https://app.framerstatic.com/Inter-Regular.cyrillic-ext-CFTLRB35.woff2',
+      weight: '400',
+    }, {
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      url: 'https://app.framerstatic.com/Inter-Regular.cyrillic-KKLZBALH.woff2',
+      weight: '400',
+    }, {
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange: 'U+1F00-1FFF',
+      url: 'https://app.framerstatic.com/Inter-Regular.greek-ext-ULEBLIFV.woff2',
+      weight: '400',
+    }, {
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange: 'U+0370-03FF',
+      url: 'https://app.framerstatic.com/Inter-Regular.greek-IRHSNFQB.woff2',
+      weight: '400',
+    }, {
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange: 'U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      url: 'https://app.framerstatic.com/Inter-Regular.latin-ext-VZDUGU3Q.woff2',
+      weight: '400',
+    }, {
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange:
+        'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      url: 'https://app.framerstatic.com/Inter-Regular.latin-JLQMKCHE.woff2',
+      weight: '400',
+    }, {
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange: 'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB',
+      url: 'https://app.framerstatic.com/Inter-Regular.vietnamese-QK7VSWXK.woff2',
+      weight: '400',
+    },],
+  },
+  ...ConicFonts,
+  ...ClockFonts,
+], { supportsExplicitInterCodegen: true, },);
+
+// https :https://framerusercontent.com/modules/Yveis5w6RlXgK74sLnR2/SCMP0V4tYExNGlZVhGl7/uRlqfPp64.js
+import { jsx as _jsx4, jsxs as _jsxs3, } from 'react/jsx-runtime';
+import {
+  addFonts as addFonts3,
+  ComponentViewportProvider as ComponentViewportProvider3,
+  cx as cx3,
+  getFonts as getFonts3,
+  useComponentViewport as useComponentViewport3,
+  useLocaleInfo as useLocaleInfo3,
+  useVariantState as useVariantState3,
+  withCSS as withCSS3,
+} from 'unframer';
+import { LayoutGroup as LayoutGroup3, motion as motion3, MotionConfigContext as MotionConfigContext3, } from 'unframer';
+import * as React3 from 'react';
+var ConicFonts2 = getFonts3(Conic,);
+var ClockFonts2 = getFonts3(Clock,);
+var cycleOrder3 = ['k5dbfugPO',];
+var serializationHash3 = 'framer-alg8l';
+var variantClassNames3 = { k5dbfugPO: 'framer-v-1ev0b04', };
+var transition13 = { damping: 60, delay: 0, mass: 1, stiffness: 500, type: 'spring', };
+var transformTemplate12 = (_, t,) => `translateY(-50%) ${t}`;
+var Transition3 = ({ value, children, },) => {
+  const config = React3.useContext(MotionConfigContext3,);
+  const transition = value !== null && value !== void 0 ? value : config.transition;
+  const contextValue = React3.useMemo(() => ({ ...config, transition, }), [JSON.stringify(transition,),],);
+  return /* @__PURE__ */ _jsx4(MotionConfigContext3.Provider, { value: contextValue, children, },);
+};
+var Variants3 = motion3(React3.Fragment,);
+var getProps3 = ({ height, id, width, ...props },) => {
+  return { ...props, };
+};
+var createLayoutDependency3 = (props, variants,) => variants.join('-',) + props.layoutDependency;
+var Component3 = /* @__PURE__ */ React3.forwardRef(function (props, ref,) {
+  const { activeLocale, setLocale, } = useLocaleInfo3();
+  const { style, className: className2, layoutId, variant, ...restProps } = getProps3(props,);
+  const { baseVariant, classNames, gestureVariant, setGestureState, setVariant, variants, } = useVariantState3({
+    cycleOrder: cycleOrder3,
+    defaultVariant: 'k5dbfugPO',
+    variant,
+    variantClassNames: variantClassNames3,
+  },);
+  const layoutDependency = createLayoutDependency3(props, variants,);
+  const ref1 = React3.useRef(null,);
+  const defaultLayoutId = React3.useId();
+  const sharedStyleClassNames = [];
+  const componentViewport = useComponentViewport3();
+  return /* @__PURE__ */ _jsx4(LayoutGroup3, {
+    id: layoutId !== null && layoutId !== void 0 ? layoutId : defaultLayoutId,
+    children: /* @__PURE__ */ _jsx4(Variants3, {
+      animate: variants,
+      initial: false,
+      children: /* @__PURE__ */ _jsx4(Transition3, {
+        value: transition13,
+        children: /* @__PURE__ */ _jsxs3(motion3.div, {
+          ...restProps,
+          className: cx3(serializationHash3, ...sharedStyleClassNames, 'framer-1ev0b04', className2, classNames,),
+          'data-framer-name': 'Variant 1',
+          layoutDependency,
+          layoutId: 'k5dbfugPO',
+          onHoverEnd: () => setGestureState({ isHovered: false, },),
+          onHoverStart: () => setGestureState({ isHovered: true, },),
+          onTap: () => setGestureState({ isPressed: false, },),
+          onTapCancel: () => setGestureState({ isPressed: false, },),
+          onTapStart: () => setGestureState({ isPressed: true, },),
+          ref: ref !== null && ref !== void 0 ? ref : ref1,
+          style: { backgroundColor: 'rgb(255, 255, 255)', ...style, },
+          children: [
+            /* @__PURE__ */ _jsx4(ComponentViewportProvider3, {
+              children: /* @__PURE__ */ _jsx4(motion3.div, {
+                className: 'framer-1s8prrx-container',
+                layoutDependency,
+                layoutId: 'uDxjNmVrh-container',
+                children: /* @__PURE__ */ _jsx4(Conic, {
+                  blur: 17,
+                  colors: 'cyan, magenta, yellow, cyan',
+                  from: 0,
+                  height: '100%',
+                  id: 'uDxjNmVrh',
+                  layoutId: 'uDxjNmVrh',
+                  radius: 126,
+                  style: { height: '100%', width: '100%', },
+                  width: '100%',
+                  xPos: 91,
+                  yPos: 50,
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx4(ComponentViewportProvider3, {
+              children: /* @__PURE__ */ _jsx4(motion3.div, {
+                className: 'framer-pqg8m7-container',
+                layoutDependency,
+                layoutId: 'VLJ0P2qid-container',
+                children: /* @__PURE__ */ _jsx4(Conic, {
+                  blur: 17,
+                  colors: 'cyan, magenta, yellow, cyan',
+                  from: 0,
+                  height: '100%',
+                  id: 'VLJ0P2qid',
+                  layoutId: 'VLJ0P2qid',
+                  radius: 126,
+                  style: { height: '100%', width: '100%', },
+                  width: '100%',
+                  xPos: 44,
+                  yPos: 44,
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx4(motion3.div, {
+              className: 'framer-16e9q7d',
               layoutDependency,
-              layoutId: 'MdN5ccUmG',
-              children: [
-                /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                  children: /* @__PURE__ */ _jsx2(motion.div, {
-                    className: 'framer-1nytdig-container',
-                    layoutDependency,
-                    layoutId: 'qKQacUBTL-container',
-                    transformTemplate: transformTemplate1,
-                    children: /* @__PURE__ */ _jsx2(Clock, {
-                      ampmCase: 'uppercase',
-                      color: 'rgb(255, 255, 255)',
-                      font: {
-                        fontFamily: '"Inter", sans-serif',
-                        fontSize: '22px',
-                        fontStyle: 'normal',
-                        letterSpacing: '0em',
-                        lineHeight: '1em',
-                      },
-                      height: '100%',
-                      id: 'qKQacUBTL',
-                      is12hour: true,
-                      layoutId: 'qKQacUBTL',
-                      prefix: '',
-                      seconds: true,
-                      style: { width: '100%', },
-                      suffix: '',
-                      textSelect: true,
-                      timeZone: false,
-                      width: '100%',
-                    },),
+              layoutId: 'bKgV1Kl_L',
+              style: { filter: 'grayscale(1)', WebkitFilter: 'grayscale(1)', },
+              children: /* @__PURE__ */ _jsx4(ComponentViewportProvider3, {
+                children: /* @__PURE__ */ _jsx4(motion3.div, {
+                  className: 'framer-6tesu7-container',
+                  layoutDependency,
+                  layoutId: 'Z3cDF2BVb-container',
+                  children: /* @__PURE__ */ _jsx4(Conic, {
+                    blur: 17,
+                    colors: 'cyan, magenta, yellow, cyan',
+                    from: 0,
+                    height: '100%',
+                    id: 'Z3cDF2BVb',
+                    layoutId: 'Z3cDF2BVb',
+                    radius: 126,
+                    style: { height: '100%', width: '100%', },
+                    width: '100%',
+                    xPos: 55,
+                    yPos: 36,
                   },),
                 },),
-                /* @__PURE__ */ _jsx2(motion.div, {
-                  className: 'framer-1xwtt6l',
-                  'data-highlight': true,
+              },),
+            },),
+            /* @__PURE__ */ _jsx4(ComponentViewportProvider3, {
+              children: /* @__PURE__ */ _jsx4(motion3.div, {
+                className: 'framer-1oen9ib-container',
+                layoutDependency,
+                layoutId: 'fKLzDZr53-container',
+                children: /* @__PURE__ */ _jsx4(Conic, {
+                  blur: 17,
+                  colors: 'cyan, magenta, yellow, cyan',
+                  from: 0,
+                  height: '100%',
+                  id: 'fKLzDZr53',
+                  layoutId: 'fKLzDZr53',
+                  radius: 126,
+                  style: { height: '100%', width: '100%', },
+                  width: '100%',
+                  xPos: 100,
+                  yPos: 100,
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx4(motion3.div, {
+              className: 'framer-hpno8m',
+              layoutDependency,
+              layoutId: 'FEIcFaF9x',
+              style: { filter: 'grayscale(1)', WebkitFilter: 'grayscale(1)', },
+              children: /* @__PURE__ */ _jsx4(ComponentViewportProvider3, {
+                children: /* @__PURE__ */ _jsx4(motion3.div, {
+                  className: 'framer-xvbzfj-container',
                   layoutDependency,
-                  layoutId: 'FZ1CbHCuu',
-                  onTap: onTapcli6fb,
+                  layoutId: 'Rm8Vvdh16-container',
+                  children: /* @__PURE__ */ _jsx4(Conic, {
+                    blur: 17,
+                    colors: 'cyan, magenta, yellow, cyan',
+                    from: 0,
+                    height: '100%',
+                    id: 'Rm8Vvdh16',
+                    layoutId: 'Rm8Vvdh16',
+                    radius: 126,
+                    style: { height: '100%', width: '100%', },
+                    width: '100%',
+                    xPos: 42,
+                    yPos: 0,
+                  },),
                 },),
-              ],
+              },),
             },),
-            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-              children: /* @__PURE__ */ _jsx2(motion.div, {
-                className: 'framer-agc84h-container',
-                'data-framer-name': 'icon-settings',
+            /* @__PURE__ */ _jsx4(ComponentViewportProvider3, {
+              children: /* @__PURE__ */ _jsx4(motion3.div, {
+                className: 'framer-sh1po6-container',
                 layoutDependency,
-                layoutId: 'xxx4qs419-container',
-                name: 'icon-settings',
-                children: /* @__PURE__ */ _jsx2(Icon, {
-                  color: 'rgb(255, 255, 255)',
+                layoutId: 'pt01GEA86-container',
+                transformTemplate: transformTemplate12,
+                children: /* @__PURE__ */ _jsx4(Clock, {
+                  ampmCase: 'uppercase',
+                  color: 'rgb(0, 0, 0)',
+                  font: {
+                    fontFamily: '"Inter", sans-serif',
+                    fontSize: '22px',
+                    fontStyle: 'normal',
+                    letterSpacing: '0em',
+                    lineHeight: '1em',
+                  },
                   height: '100%',
-                  iconSearch: 'settings',
-                  iconSelection: 'KeyframesCouple',
-                  id: 'xxx4qs419',
-                  layoutId: 'xxx4qs419',
-                  mirrored: false,
-                  name: 'icon-settings',
-                  onClick: onClick10201fo,
-                  selectByList: false,
-                  style: { height: '100%', width: '100%', },
+                  id: 'pt01GEA86',
+                  is12hour: true,
+                  layoutId: 'pt01GEA86',
+                  prefix: '',
+                  seconds: true,
+                  style: { width: '100%', },
+                  suffix: '',
+                  textSelect: true,
+                  timeZone: false,
                   width: '100%',
                 },),
               },),
             },),
-            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-              children: /* @__PURE__ */ _jsx2(motion.div, {
-                className: 'framer-1399mgx-container',
-                'data-framer-name': 'icon-health',
+            /* @__PURE__ */ _jsx4(motion3.div, { className: 'framer-1bxr64m', layoutDependency, layoutId: 'r9c6f_Vh3', },),
+            /* @__PURE__ */ _jsx4(ComponentViewportProvider3, {
+              children: /* @__PURE__ */ _jsx4(motion3.div, {
+                className: 'framer-fkwbrh-container',
                 layoutDependency,
-                layoutId: 'mNy66AvsB-container',
-                name: 'icon-health',
-                children: /* @__PURE__ */ _jsx2(Icon, {
-                  color: 'rgb(255, 255, 255)',
+                layoutId: 'gmKyx6FXU-container',
+                transformTemplate: transformTemplate12,
+                children: /* @__PURE__ */ _jsx4(Clock, {
+                  ampmCase: 'uppercase',
+                  color: 'rgb(0, 0, 0)',
+                  font: {
+                    fontFamily: '"Inter", sans-serif',
+                    fontSize: '22px',
+                    fontStyle: 'normal',
+                    letterSpacing: '0em',
+                    lineHeight: '1em',
+                  },
                   height: '100%',
-                  iconSearch: 'kayframe',
-                  iconSelection: 'KeyframesCouple',
-                  id: 'mNy66AvsB',
-                  layoutId: 'mNy66AvsB',
-                  mirrored: false,
-                  name: 'icon-health',
-                  onClick: onClickdfmpom,
-                  selectByList: true,
-                  style: { height: '100%', width: '100%', },
+                  id: 'gmKyx6FXU',
+                  is12hour: true,
+                  layoutId: 'gmKyx6FXU',
+                  prefix: '',
+                  seconds: true,
+                  style: { width: '100%', },
+                  suffix: '',
+                  textSelect: true,
+                  timeZone: false,
                   width: '100%',
                 },),
               },),
             },),
-            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-              children: /* @__PURE__ */ _jsx2(motion.div, {
-                className: 'framer-l6hkuc-container',
-                'data-framer-name': 'icon-chat',
+            /* @__PURE__ */ _jsx4(motion3.div, { className: 'framer-12pd6cm', layoutDependency, layoutId: 'AlzRxduXA', },),
+            /* @__PURE__ */ _jsx4(ComponentViewportProvider3, {
+              children: /* @__PURE__ */ _jsx4(motion3.div, {
+                className: 'framer-1f7d66x-container',
                 layoutDependency,
-                layoutId: 'GeIIfA2tS-container',
-                name: 'icon-chat',
-                children: /* @__PURE__ */ _jsx2(Icon, {
-                  color: 'rgb(255, 255, 255)',
+                layoutId: 'mRTu09HyL-container',
+                transformTemplate: transformTemplate12,
+                children: /* @__PURE__ */ _jsx4(Clock, {
+                  ampmCase: 'uppercase',
+                  color: 'rgb(0, 0, 0)',
+                  font: {
+                    fontFamily: '"Inter", sans-serif',
+                    fontSize: '22px',
+                    fontStyle: 'normal',
+                    letterSpacing: '0em',
+                    lineHeight: '1em',
+                  },
                   height: '100%',
-                  iconSearch: 'chatbubble',
-                  iconSelection: 'ChatBubble',
-                  id: 'GeIIfA2tS',
-                  layoutId: 'GeIIfA2tS',
-                  mirrored: false,
-                  name: 'icon-chat',
-                  onClick: onClick1dhtbjt,
-                  selectByList: false,
-                  style: { height: '100%', width: '100%', },
+                  id: 'mRTu09HyL',
+                  is12hour: true,
+                  layoutId: 'mRTu09HyL',
+                  prefix: '',
+                  seconds: true,
+                  style: { width: '100%', },
+                  suffix: '',
+                  textSelect: true,
+                  timeZone: false,
                   width: '100%',
                 },),
               },),
             },),
-            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-              children: /* @__PURE__ */ _jsx2(Scroll, {
+            /* @__PURE__ */ _jsx4(motion3.div, { className: 'framer-4rqzvx', layoutDependency, layoutId: 'JpxsfG0WH', },),
+          ],
+        },),
+      },),
+    },),
+  },);
+},);
+var css4 = [
+  '@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }',
+  '.framer-alg8l.framer-1qmwzjs, .framer-alg8l .framer-1qmwzjs { display: block; }',
+  '.framer-alg8l.framer-1ev0b04 { height: 183px; overflow: hidden; position: relative; width: 807px; }',
+  '.framer-alg8l .framer-1s8prrx-container { flex: none; height: 150px; position: absolute; right: 21px; top: calc(50.27322404371587% - 150px / 2); width: 150px; }',
+  '.framer-alg8l .framer-pqg8m7-container { flex: none; height: 150px; position: absolute; right: 179px; top: calc(50.27322404371587% - 150px / 2); width: 149px; }',
+  '.framer-alg8l .framer-16e9q7d { flex: none; height: 150px; left: 6px; overflow: visible; position: absolute; top: calc(50.27322404371587% - 150px / 2); width: 150px; }',
+  '.framer-alg8l .framer-6tesu7-container, .framer-alg8l .framer-xvbzfj-container { bottom: 0px; flex: none; left: 0px; position: absolute; right: 0px; top: 0px; }',
+  '.framer-alg8l .framer-1oen9ib-container { flex: none; height: 150px; left: 164px; position: absolute; top: calc(50.27322404371587% - 150px / 2); width: 149px; }',
+  '.framer-alg8l .framer-hpno8m { flex: none; height: 150px; left: calc(49.07063197026025% - 150px / 2); overflow: visible; position: absolute; top: calc(50.27322404371587% - 150px / 2); width: 150px; }',
+  '.framer-alg8l .framer-sh1po6-container { flex: none; height: auto; left: 208px; position: absolute; top: 50%; width: 79px; }',
+  '.framer-alg8l .framer-1bxr64m { flex: none; height: 15px; left: 211px; overflow: visible; position: absolute; top: calc(49.72677595628417% - 15px / 2); width: 64px; }',
+  '.framer-alg8l .framer-fkwbrh-container { flex: none; height: auto; position: absolute; right: 204px; top: 50%; width: 79px; }',
+  '.framer-alg8l .framer-12pd6cm { flex: none; height: 15px; overflow: visible; position: absolute; right: 215px; top: calc(49.72677595628417% - 15px / 2); width: 64px; }',
+  '.framer-alg8l .framer-1f7d66x-container { flex: none; height: auto; position: absolute; right: 46px; top: 50%; width: 79px; }',
+  '.framer-alg8l .framer-4rqzvx { flex: none; height: 15px; overflow: visible; position: absolute; right: 57px; top: calc(49.72677595628417% - 15px / 2); width: 64px; }',
+];
+var FrameruRlqfPp64 = withCSS3(Component3, css4, 'framer-alg8l',);
+var stdin_default3 = FrameruRlqfPp64;
+FrameruRlqfPp64.displayName = 'scroll-MAIN-lastchatted';
+FrameruRlqfPp64.defaultProps = { height: 183, width: 807, };
+addFonts3(FrameruRlqfPp64, [
+  {
+    explicitInter: true,
+    fonts: [{
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      url: 'https://app.framerstatic.com/Inter-Regular.cyrillic-ext-CFTLRB35.woff2',
+      weight: '400',
+    }, {
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      url: 'https://app.framerstatic.com/Inter-Regular.cyrillic-KKLZBALH.woff2',
+      weight: '400',
+    }, {
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange: 'U+1F00-1FFF',
+      url: 'https://app.framerstatic.com/Inter-Regular.greek-ext-ULEBLIFV.woff2',
+      weight: '400',
+    }, {
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange: 'U+0370-03FF',
+      url: 'https://app.framerstatic.com/Inter-Regular.greek-IRHSNFQB.woff2',
+      weight: '400',
+    }, {
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange: 'U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      url: 'https://app.framerstatic.com/Inter-Regular.latin-ext-VZDUGU3Q.woff2',
+      weight: '400',
+    }, {
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange:
+        'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      url: 'https://app.framerstatic.com/Inter-Regular.latin-JLQMKCHE.woff2',
+      weight: '400',
+    }, {
+      family: 'Inter',
+      source: 'framer',
+      style: 'normal',
+      unicodeRange: 'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB',
+      url: 'https://app.framerstatic.com/Inter-Regular.vietnamese-QK7VSWXK.woff2',
+      weight: '400',
+    },],
+  },
+  ...ConicFonts2,
+  ...ClockFonts2,
+], { supportsExplicitInterCodegen: true, },);
+
+// https :https://framerusercontent.com/modules/cXTaKi4vytBfDn1r1821/2Y8PnW9SjYME6r5emfxg/fLExZKtD2.js
+var ScrollMAINNearbyFonts = getFonts4(stdin_default2,);
+var ScrollMAINLastchattedFonts = getFonts4(stdin_default3,);
+var GlobeFonts = getFonts4(Globe,);
+var cycleOrder4 = ['DnYO1gjcV',];
+var serializationHash4 = 'framer-YgkO3';
+var variantClassNames4 = { DnYO1gjcV: 'framer-v-1i19mzh', };
+var transition14 = { damping: 60, delay: 0, mass: 1, stiffness: 500, type: 'spring', };
+var Transition4 = ({ value, children, },) => {
+  const config = React4.useContext(MotionConfigContext4,);
+  const transition = value !== null && value !== void 0 ? value : config.transition;
+  const contextValue = React4.useMemo(() => ({ ...config, transition, }), [JSON.stringify(transition,),],);
+  return /* @__PURE__ */ _jsx5(MotionConfigContext4.Provider, { value: contextValue, children, },);
+};
+var Variants4 = motion4(React4.Fragment,);
+var getProps4 = ({ height, id, width, ...props },) => {
+  return { ...props, };
+};
+var createLayoutDependency4 = (props, variants,) => variants.join('-',) + props.layoutDependency;
+var Component4 = /* @__PURE__ */ React4.forwardRef(function (props, ref,) {
+  const { activeLocale, setLocale, } = useLocaleInfo4();
+  const { style, className: className2, layoutId, variant, ...restProps } = getProps4(props,);
+  const { baseVariant, classNames, gestureVariant, setGestureState, setVariant, variants, } = useVariantState4({
+    cycleOrder: cycleOrder4,
+    defaultVariant: 'DnYO1gjcV',
+    variant,
+    variantClassNames: variantClassNames4,
+  },);
+  const layoutDependency = createLayoutDependency4(props, variants,);
+  const ref1 = React4.useRef(null,);
+  const defaultLayoutId = React4.useId();
+  const sharedStyleClassNames = [className,];
+  const componentViewport = useComponentViewport4();
+  return /* @__PURE__ */ _jsx5(LayoutGroup4, {
+    id: layoutId !== null && layoutId !== void 0 ? layoutId : defaultLayoutId,
+    children: /* @__PURE__ */ _jsx5(Variants4, {
+      animate: variants,
+      initial: false,
+      children: /* @__PURE__ */ _jsx5(Transition4, {
+        value: transition14,
+        children: /* @__PURE__ */ _jsxs4(motion4.div, {
+          ...restProps,
+          className: cx4(serializationHash4, ...sharedStyleClassNames, 'framer-1i19mzh', className2, classNames,),
+          'data-framer-name': 'Variant 1',
+          layoutDependency,
+          layoutId: 'DnYO1gjcV',
+          onHoverEnd: () => setGestureState({ isHovered: false, },),
+          onHoverStart: () => setGestureState({ isHovered: true, },),
+          onTap: () => setGestureState({ isPressed: false, },),
+          onTapCancel: () => setGestureState({ isPressed: false, },),
+          onTapStart: () => setGestureState({ isPressed: true, },),
+          ref: ref !== null && ref !== void 0 ? ref : ref1,
+          style: { backgroundColor: 'rgb(255, 255, 255)', ...style, },
+          children: [
+            /* @__PURE__ */ _jsx5(ComponentViewportProvider4, {
+              children: /* @__PURE__ */ _jsx5(Scroll, {
                 __fromCanvasComponent: true,
                 __fromCodeComponentNode: true,
                 _border: {},
                 background: null,
-                className: 'framer-1jjo2l1',
+                className: 'framer-11ugzxo',
                 contentOffsetX: 0,
                 contentOffsetY: 0,
-                direction: 'vertical',
+                direction: 'horizontal',
                 directionLock: true,
                 dragEnabled: true,
                 layoutDependency,
-                layoutId: 'vgNX25mfa',
+                layoutId: 'lK6sml63M',
                 native: true,
                 overdragEnabled: false,
                 resetOffset: false,
                 scrollBarVisible: false,
                 wheelEnabled: true,
-                children: /* @__PURE__ */ _jsxs(motion.div, {
-                  className: 'framer-17h88q3',
-                  'data-framer-name': 'scroll-MAIN',
-                  layoutDependency,
-                  layoutId: 'CS0usKIgt',
-                  style: { backgroundColor: 'rgb(255, 255, 255)', },
-                  children: [
-                    /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                      children: /* @__PURE__ */ _jsx2(Scroll, {
-                        __fromCanvasComponent: true,
-                        __fromCodeComponentNode: true,
-                        _border: {},
-                        background: null,
-                        className: 'framer-1ju2mjk',
-                        contentOffsetX: 0,
-                        contentOffsetY: 0,
-                        direction: 'horizontal',
-                        directionLock: true,
-                        dragEnabled: true,
-                        layoutDependency,
-                        layoutId: 'eUnJDSt4F',
-                        native: true,
-                        overdragEnabled: false,
-                        resetOffset: false,
-                        scrollBarVisible: false,
-                        wheelEnabled: true,
-                        children: /* @__PURE__ */ _jsxs(motion.div, {
-                          className: 'framer-pyhjcm',
-                          'data-framer-name': 'scroll-MAIN-nearby',
-                          layoutDependency,
-                          layoutId: 'SHtl5bqst',
-                          style: { backgroundColor: 'rgb(255, 255, 255)', },
-                          children: [
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-17j2xs3-container',
-                                layoutDependency,
-                                layoutId: 'lgk5DSS8N-container',
-                                children: /* @__PURE__ */ _jsx2(Conic, {
-                                  blur: 17,
-                                  colors: ['rgb(0, 255, 255)', 'rgb(255, 0, 255)', 'rgb(255, 255, 0)', 'rgb(0, 255, 255)',],
-                                  from: 0,
-                                  height: '100%',
-                                  id: 'lgk5DSS8N',
-                                  layoutId: 'lgk5DSS8N',
-                                  radius: 126,
-                                  style: { height: '100%', width: '100%', },
-                                  width: '100%',
-                                  xPos: 91,
-                                  yPos: 50,
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-1dcx8zh-container',
-                                layoutDependency,
-                                layoutId: 'o4tMfmEEe-container',
-                                children: /* @__PURE__ */ _jsx2(Conic, {
-                                  blur: 17,
-                                  colors: ['rgb(0, 255, 255)', 'rgb(255, 0, 255)', 'rgb(255, 255, 0)', 'rgb(0, 255, 255)',],
-                                  from: 0,
-                                  height: '100%',
-                                  id: 'o4tMfmEEe',
-                                  layoutId: 'o4tMfmEEe',
-                                  radius: 126,
-                                  style: { height: '100%', width: '100%', },
-                                  width: '100%',
-                                  xPos: 42,
-                                  yPos: 0,
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-4m0fpj-container',
-                                layoutDependency,
-                                layoutId: 'Gju8BbJsP-container',
-                                children: /* @__PURE__ */ _jsx2(Conic, {
-                                  blur: 17,
-                                  colors: ['rgb(0, 255, 255)', 'rgb(255, 255, 0)', 'rgb(255, 153, 0)', 'rgb(0, 67, 112)',],
-                                  from: 0,
-                                  height: '100%',
-                                  id: 'Gju8BbJsP',
-                                  layoutId: 'Gju8BbJsP',
-                                  radius: 126,
-                                  style: { height: '100%', width: '100%', },
-                                  width: '100%',
-                                  xPos: 55,
-                                  yPos: 36,
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-nm1qoy-container',
-                                layoutDependency,
-                                layoutId: 'HWKLs8er6-container',
-                                children: /* @__PURE__ */ _jsx2(Conic, {
-                                  blur: 17,
-                                  colors: ['rgb(0, 255, 255)', 'rgb(255, 0, 255)', 'rgb(255, 255, 0)', 'rgb(0, 255, 255)',],
-                                  from: 0,
-                                  height: '100%',
-                                  id: 'HWKLs8er6',
-                                  layoutId: 'HWKLs8er6',
-                                  radius: 126,
-                                  style: { height: '100%', width: '100%', },
-                                  width: '100%',
-                                  xPos: 100,
-                                  yPos: 100,
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-1igp7ei-container',
-                                layoutDependency,
-                                layoutId: 'OUAQdYZTf-container',
-                                children: /* @__PURE__ */ _jsx2(Conic, {
-                                  blur: 17,
-                                  colors: ['rgb(0, 255, 255)', 'rgb(255, 0, 255)', 'rgb(255, 255, 0)', 'rgb(73, 61, 34)',],
-                                  from: 0,
-                                  height: '100%',
-                                  id: 'OUAQdYZTf',
-                                  layoutId: 'OUAQdYZTf',
-                                  radius: 126,
-                                  style: { height: '100%', width: '100%', },
-                                  width: '100%',
-                                  xPos: 42,
-                                  yPos: 0,
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-1k1wgkf-container',
-                                layoutDependency,
-                                layoutId: 'a3IDoNBPR-container',
-                                transformTemplate: transformTemplate2,
-                                children: /* @__PURE__ */ _jsx2(Clock, {
-                                  ampmCase: 'uppercase',
-                                  color: 'rgb(0, 0, 0)',
-                                  font: {
-                                    fontFamily: '"Inter", sans-serif',
-                                    fontSize: '22px',
-                                    fontStyle: 'normal',
-                                    letterSpacing: '0em',
-                                    lineHeight: '1em',
-                                  },
-                                  height: '100%',
-                                  id: 'a3IDoNBPR',
-                                  is12hour: true,
-                                  layoutId: 'a3IDoNBPR',
-                                  prefix: '',
-                                  seconds: true,
-                                  style: { width: '100%', },
-                                  suffix: '',
-                                  textSelect: true,
-                                  timeZone: false,
-                                  width: '100%',
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(motion.div, { className: 'framer-17cpsnd', layoutDependency, layoutId: 'nBafXejQ0', },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-1hlfwbm-container',
-                                layoutDependency,
-                                layoutId: 'ZPpSUGXbt-container',
-                                transformTemplate: transformTemplate2,
-                                children: /* @__PURE__ */ _jsx2(Clock, {
-                                  ampmCase: 'uppercase',
-                                  color: 'rgb(0, 0, 0)',
-                                  font: {
-                                    fontFamily: '"Inter", sans-serif',
-                                    fontSize: '22px',
-                                    fontStyle: 'normal',
-                                    letterSpacing: '0em',
-                                    lineHeight: '1em',
-                                  },
-                                  height: '100%',
-                                  id: 'ZPpSUGXbt',
-                                  is12hour: true,
-                                  layoutId: 'ZPpSUGXbt',
-                                  prefix: '',
-                                  seconds: true,
-                                  style: { width: '100%', },
-                                  suffix: '',
-                                  textSelect: true,
-                                  timeZone: false,
-                                  width: '100%',
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(motion.div, { className: 'framer-1xdn9by', layoutDependency, layoutId: 'YX9qtdlY2', },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-13p09ur-container',
-                                layoutDependency,
-                                layoutId: 'LsOvnAb_5-container',
-                                transformTemplate: transformTemplate3,
-                                children: /* @__PURE__ */ _jsx2(Clock, {
-                                  ampmCase: 'uppercase',
-                                  color: 'rgb(0, 0, 0)',
-                                  font: {
-                                    fontFamily: '"Inter", sans-serif',
-                                    fontSize: '22px',
-                                    fontStyle: 'normal',
-                                    letterSpacing: '0em',
-                                    lineHeight: '1em',
-                                  },
-                                  height: '100%',
-                                  id: 'LsOvnAb_5',
-                                  is12hour: true,
-                                  layoutId: 'LsOvnAb_5',
-                                  prefix: '',
-                                  seconds: true,
-                                  style: { width: '100%', },
-                                  suffix: '',
-                                  textSelect: true,
-                                  timeZone: false,
-                                  width: '100%',
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(motion.div, { className: 'framer-1jbbaq3', layoutDependency, layoutId: 'ry2ChvGpq', },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-18wej7g-container',
-                                layoutDependency,
-                                layoutId: 'dJPjBfcBW-container',
-                                transformTemplate: transformTemplate2,
-                                children: /* @__PURE__ */ _jsx2(Clock, {
-                                  ampmCase: 'uppercase',
-                                  color: 'rgb(0, 0, 0)',
-                                  font: {
-                                    fontFamily: '"Inter", sans-serif',
-                                    fontSize: '22px',
-                                    fontStyle: 'normal',
-                                    letterSpacing: '0em',
-                                    lineHeight: '1em',
-                                  },
-                                  height: '100%',
-                                  id: 'dJPjBfcBW',
-                                  is12hour: true,
-                                  layoutId: 'dJPjBfcBW',
-                                  prefix: '',
-                                  seconds: true,
-                                  style: { width: '100%', },
-                                  suffix: '',
-                                  textSelect: true,
-                                  timeZone: false,
-                                  width: '100%',
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(motion.div, { className: 'framer-14gfx5i', layoutDependency, layoutId: 'idCaAcLzz', },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-owupxq-container',
-                                layoutDependency,
-                                layoutId: 'OXGTBV02P-container',
-                                transformTemplate: transformTemplate2,
-                                children: /* @__PURE__ */ _jsx2(Clock, {
-                                  ampmCase: 'uppercase',
-                                  color: 'rgb(0, 0, 0)',
-                                  font: {
-                                    fontFamily: '"Inter", sans-serif',
-                                    fontSize: '22px',
-                                    fontStyle: 'normal',
-                                    letterSpacing: '0em',
-                                    lineHeight: '1em',
-                                  },
-                                  height: '100%',
-                                  id: 'OXGTBV02P',
-                                  is12hour: true,
-                                  layoutId: 'OXGTBV02P',
-                                  prefix: '',
-                                  seconds: true,
-                                  style: { width: '100%', },
-                                  suffix: '',
-                                  textSelect: true,
-                                  timeZone: false,
-                                  width: '100%',
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(motion.div, { className: 'framer-1jpdh45', layoutDependency, layoutId: 'nqEZoSlda', },),
-                          ],
-                        },),
-                      },),
+                children: /* @__PURE__ */ _jsx5(ComponentViewportProvider4, {
+                  width: '807px',
+                  children: /* @__PURE__ */ _jsx5(motion4.div, {
+                    className: 'framer-1w6lvat-container',
+                    layoutDependency,
+                    layoutId: 'tZhdvakdA-container',
+                    children: /* @__PURE__ */ _jsx5(stdin_default2, {
+                      height: '100%',
+                      id: 'tZhdvakdA',
+                      layoutId: 'tZhdvakdA',
+                      style: { height: '100%', width: '100%', },
+                      width: '100%',
                     },),
-                    /* @__PURE__ */ _jsx2(RichText, {
-                      __fromCanvasComponent: true,
-                      children: /* @__PURE__ */ _jsx2(React.Fragment, {
-                        children: /* @__PURE__ */ _jsx2(motion.h1, {
-                          className: 'framer-styles-preset-ame1jg',
-                          'data-styles-preset': 'e81t2mHNr',
-                          children: 'Nearby',
-                        },),
-                      },),
-                      className: 'framer-a1pias',
-                      fonts: ['Inter',],
-                      layoutDependency,
-                      layoutId: 'kaUcgJJGf',
-                      style: { '--framer-link-text-color': 'rgb(0, 153, 255)', '--framer-link-text-decoration': 'underline', },
-                      verticalAlignment: 'top',
-                      withExternalLayout: true,
-                    },),
-                    /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                      children: /* @__PURE__ */ _jsx2(Scroll, {
-                        __fromCanvasComponent: true,
-                        __fromCodeComponentNode: true,
-                        _border: {},
-                        background: null,
-                        className: 'framer-ixfcli',
-                        contentOffsetX: 0,
-                        contentOffsetY: 0,
-                        direction: 'horizontal',
-                        directionLock: true,
-                        dragEnabled: true,
-                        layoutDependency,
-                        layoutId: 'YczPUfyeS',
-                        native: true,
-                        overdragEnabled: false,
-                        resetOffset: false,
-                        scrollBarVisible: false,
-                        wheelEnabled: true,
-                        children: /* @__PURE__ */ _jsxs(motion.div, {
-                          className: 'framer-1ru9kum',
-                          'data-framer-name': 'scroll-MAIN-lastchatted',
-                          layoutDependency,
-                          layoutId: 'NIfxpBgaT',
-                          style: { backgroundColor: 'rgb(255, 255, 255)', },
-                          children: [
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-101axot-container',
-                                layoutDependency,
-                                layoutId: 'gydCGIOTc-container',
-                                children: /* @__PURE__ */ _jsx2(Conic, {
-                                  blur: 17,
-                                  colors: ['rgb(0, 255, 255)', 'rgb(255, 0, 255)', 'rgb(255, 255, 0)', 'rgb(0, 255, 255)',],
-                                  from: 0,
-                                  height: '100%',
-                                  id: 'gydCGIOTc',
-                                  layoutId: 'gydCGIOTc',
-                                  radius: 126,
-                                  style: { height: '100%', width: '100%', },
-                                  width: '100%',
-                                  xPos: 91,
-                                  yPos: 50,
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-1tnrd59-container',
-                                layoutDependency,
-                                layoutId: 'JmKmdOM1m-container',
-                                children: /* @__PURE__ */ _jsx2(Conic, {
-                                  blur: 17,
-                                  colors: ['rgb(0, 255, 255)', 'rgb(255, 0, 255)', 'rgb(255, 255, 0)', 'rgb(0, 255, 255)',],
-                                  from: 0,
-                                  height: '100%',
-                                  id: 'JmKmdOM1m',
-                                  layoutId: 'JmKmdOM1m',
-                                  radius: 126,
-                                  style: { height: '100%', width: '100%', },
-                                  width: '100%',
-                                  xPos: 44,
-                                  yPos: 44,
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(motion.div, {
-                              className: 'framer-754ovr',
-                              layoutDependency,
-                              layoutId: 'lqYsFfcmq',
-                              style: { filter: 'grayscale(1)', WebkitFilter: 'grayscale(1)', },
-                              children: /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                                children: /* @__PURE__ */ _jsx2(motion.div, {
-                                  className: 'framer-5afurw-container',
-                                  layoutDependency,
-                                  layoutId: 'Fqn9I_AJb-container',
-                                  children: /* @__PURE__ */ _jsx2(Conic, {
-                                    blur: 17,
-                                    colors: ['rgb(0, 255, 255)', 'rgb(255, 255, 0)', 'rgb(255, 153, 0)', 'rgb(0, 67, 112)',],
-                                    from: 0,
-                                    height: '100%',
-                                    id: 'Fqn9I_AJb',
-                                    layoutId: 'Fqn9I_AJb',
-                                    radius: 126,
-                                    style: { height: '100%', width: '100%', },
-                                    width: '100%',
-                                    xPos: 55,
-                                    yPos: 36,
-                                  },),
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-qqq4rk-container',
-                                layoutDependency,
-                                layoutId: 'Ls8JInBWM-container',
-                                children: /* @__PURE__ */ _jsx2(Conic, {
-                                  blur: 17,
-                                  colors: ['rgb(0, 255, 255)', 'rgb(255, 0, 255)', 'rgb(255, 255, 0)', 'rgb(0, 255, 255)',],
-                                  from: 0,
-                                  height: '100%',
-                                  id: 'Ls8JInBWM',
-                                  layoutId: 'Ls8JInBWM',
-                                  radius: 126,
-                                  style: { height: '100%', width: '100%', },
-                                  width: '100%',
-                                  xPos: 100,
-                                  yPos: 100,
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(motion.div, {
-                              className: 'framer-1y8s7uj',
-                              layoutDependency,
-                              layoutId: 'OrCtZxCZK',
-                              style: { filter: 'grayscale(1)', WebkitFilter: 'grayscale(1)', },
-                              children: /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                                children: /* @__PURE__ */ _jsx2(motion.div, {
-                                  className: 'framer-1ax11a3-container',
-                                  layoutDependency,
-                                  layoutId: 'H97ZSeZ6H-container',
-                                  children: /* @__PURE__ */ _jsx2(Conic, {
-                                    blur: 17,
-                                    colors: ['rgb(0, 255, 255)', 'rgb(255, 0, 255)', 'rgb(255, 255, 0)', 'rgb(73, 61, 34)',],
-                                    from: 0,
-                                    height: '100%',
-                                    id: 'H97ZSeZ6H',
-                                    layoutId: 'H97ZSeZ6H',
-                                    radius: 126,
-                                    style: { height: '100%', width: '100%', },
-                                    width: '100%',
-                                    xPos: 42,
-                                    yPos: 0,
-                                  },),
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-1fcly34-container',
-                                layoutDependency,
-                                layoutId: 'Wgs_kMP7e-container',
-                                transformTemplate: transformTemplate2,
-                                children: /* @__PURE__ */ _jsx2(Clock, {
-                                  ampmCase: 'uppercase',
-                                  color: 'rgb(0, 0, 0)',
-                                  font: {
-                                    fontFamily: '"Inter", sans-serif',
-                                    fontSize: '22px',
-                                    fontStyle: 'normal',
-                                    letterSpacing: '0em',
-                                    lineHeight: '1em',
-                                  },
-                                  height: '100%',
-                                  id: 'Wgs_kMP7e',
-                                  is12hour: true,
-                                  layoutId: 'Wgs_kMP7e',
-                                  prefix: '',
-                                  seconds: true,
-                                  style: { width: '100%', },
-                                  suffix: '',
-                                  textSelect: true,
-                                  timeZone: false,
-                                  width: '100%',
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(motion.div, { className: 'framer-ef4rbq', layoutDependency, layoutId: 'KqWi7z8qT', },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-29ubu7-container',
-                                layoutDependency,
-                                layoutId: 'CUCZ7Ti3I-container',
-                                transformTemplate: transformTemplate2,
-                                children: /* @__PURE__ */ _jsx2(Clock, {
-                                  ampmCase: 'uppercase',
-                                  color: 'rgb(0, 0, 0)',
-                                  font: {
-                                    fontFamily: '"Inter", sans-serif',
-                                    fontSize: '22px',
-                                    fontStyle: 'normal',
-                                    letterSpacing: '0em',
-                                    lineHeight: '1em',
-                                  },
-                                  height: '100%',
-                                  id: 'CUCZ7Ti3I',
-                                  is12hour: true,
-                                  layoutId: 'CUCZ7Ti3I',
-                                  prefix: '',
-                                  seconds: true,
-                                  style: { width: '100%', },
-                                  suffix: '',
-                                  textSelect: true,
-                                  timeZone: false,
-                                  width: '100%',
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(motion.div, { className: 'framer-4ni5zo', layoutDependency, layoutId: 'sRMhvVHOP', },),
-                            /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                              children: /* @__PURE__ */ _jsx2(motion.div, {
-                                className: 'framer-ys3xfw-container',
-                                layoutDependency,
-                                layoutId: 'wZOsAo0OV-container',
-                                transformTemplate: transformTemplate2,
-                                children: /* @__PURE__ */ _jsx2(Clock, {
-                                  ampmCase: 'uppercase',
-                                  color: 'rgb(0, 0, 0)',
-                                  font: {
-                                    fontFamily: '"Inter", sans-serif',
-                                    fontSize: '22px',
-                                    fontStyle: 'normal',
-                                    letterSpacing: '0em',
-                                    lineHeight: '1em',
-                                  },
-                                  height: '100%',
-                                  id: 'wZOsAo0OV',
-                                  is12hour: true,
-                                  layoutId: 'wZOsAo0OV',
-                                  prefix: '',
-                                  seconds: true,
-                                  style: { width: '100%', },
-                                  suffix: '',
-                                  textSelect: true,
-                                  timeZone: false,
-                                  width: '100%',
-                                },),
-                              },),
-                            },),
-                            /* @__PURE__ */ _jsx2(motion.div, { className: 'framer-1vxexsj', layoutDependency, layoutId: 'TgFHYh587', },),
-                          ],
-                        },),
-                      },),
-                    },),
-                    /* @__PURE__ */ _jsx2(RichText, {
-                      __fromCanvasComponent: true,
-                      children: /* @__PURE__ */ _jsx2(React.Fragment, {
-                        children: /* @__PURE__ */ _jsx2(motion.h1, {
-                          className: 'framer-styles-preset-ame1jg',
-                          'data-styles-preset': 'e81t2mHNr',
-                          children: 'Last Chatted',
-                        },),
-                      },),
-                      className: 'framer-cmc2uy',
-                      fonts: ['Inter',],
-                      layoutDependency,
-                      layoutId: 'sdFVOjSWF',
-                      style: { '--framer-link-text-color': 'rgb(0, 153, 255)', '--framer-link-text-decoration': 'underline', },
-                      verticalAlignment: 'top',
-                      withExternalLayout: true,
-                    },),
-                    /* @__PURE__ */ _jsx2(ComponentViewportProvider, {
-                      children: /* @__PURE__ */ _jsx2(motion.div, {
-                        className: 'framer-r1xlzr-container',
-                        layoutDependency,
-                        layoutId: 'mVMTxKpij-container',
-                        children: /* @__PURE__ */ _jsx2(Globe, {
-                          alignment: 'center',
-                          background: 'rgba(0, 0, 0, 0)',
-                          baseColor: 'rgb(255, 255, 255)',
-                          dark: 1,
-                          diffuse: 1.86,
-                          dragOptions: { damping: 40, mass: 1, stiffness: 200, },
-                          glowColor: 'rgb(255, 255, 255)',
-                          height: '100%',
-                          id: 'mVMTxKpij',
-                          isDraggable: true,
-                          layoutId: 'mVMTxKpij',
-                          mapBrightness: 12,
-                          markerArray: [
-                            { latitude: 52.3676, longitude: 4.9041, },
-                            { latitude: 33.1821, longitude: 4.9041, },
-                            { latitude: 52.3676, longitude: -15.2524, },
-                            { latitude: 52.3676, longitude: 56.7909, },
-                            { latitude: 42.1605, longitude: 28.0168, },
-                            { latitude: -55.006, longitude: -9.8437, },
-                            { latitude: 65.5529, longitude: -58.6298, },
-                            { latitude: 40.1052, longitude: -39.5913, },
-                            { latitude: 75.5859, longitude: 86.4303, },
-                            { latitude: -50.1923, longitude: -29.4772, },
-                            { latitude: -23.9062, longitude: -27.0974, },
-                            { latitude: 65.4988, longitude: -159.0144, },
-                            { latitude: 9.0595, longitude: 130.619, },
-                            { latitude: 52.3676, longitude: 180, },
-                            { latitude: 16.6046, longitude: 163.5577, },
-                            { latitude: -79.372, longitude: -34.1827, },
-                            { latitude: 31.3431, longitude: 122.7224, },
-                          ],
-                          markerColor: 'rgb(255, 121, 173)',
-                          markerSize: 0.05,
-                          maxSamples: 9135,
-                          maxWidth: 800,
-                          offset: { offsetX: -69, offsetY: -44, },
-                          phi: 0,
-                          scale: 1.05,
-                          speed: 0.3,
-                          style: { height: '100%', width: '100%', },
-                          theta: 0.3,
-                          width: '100%',
-                        },),
-                      },),
-                    },),
-                    /* @__PURE__ */ _jsx2(RichText, {
-                      __fromCanvasComponent: true,
-                      children: /* @__PURE__ */ _jsx2(React.Fragment, {
-                        children: /* @__PURE__ */ _jsx2(motion.h1, {
-                          className: 'framer-styles-preset-ame1jg',
-                          'data-styles-preset': 'e81t2mHNr',
-                          children: 'Discover',
-                        },),
-                      },),
-                      className: 'framer-143eqw0',
-                      fonts: ['Inter',],
-                      layoutDependency,
-                      layoutId: 'PBbhLyMzT',
-                      style: { '--framer-link-text-color': 'rgb(0, 153, 255)', '--framer-link-text-decoration': 'underline', },
-                      verticalAlignment: 'top',
-                      withExternalLayout: true,
-                    },),
-                    /* @__PURE__ */ _jsx2(RichText, {
-                      __fromCanvasComponent: true,
-                      children: /* @__PURE__ */ _jsx2(React.Fragment, {
-                        children: /* @__PURE__ */ _jsx2(motion.h1, {
-                          style: {
-                            '--font-selector': 'R0Y7RE0gU2Fucy0zMDA=',
-                            '--framer-font-family': '"DM Sans", "DM Sans Placeholder", sans-serif',
-                            '--framer-font-size': '18px',
-                            '--framer-font-weight': '300',
-                            '--framer-text-alignment': 'left',
-                            '--framer-text-color': 'var(--extracted-gdpscs, rgb(166, 166, 166))',
-                          },
-                          children: '18 people are sh*tting within 5 miles.',
-                        },),
-                      },),
-                      className: 'framer-19jcjv8',
-                      fonts: ['GF;DM Sans-300',],
-                      layoutDependency,
-                      layoutId: 'MGF6VhM65',
-                      style: {
-                        '--extracted-gdpscs': 'rgb(166, 166, 166)',
-                        '--framer-link-text-color': 'rgb(0, 153, 255)',
-                        '--framer-link-text-decoration': 'underline',
-                      },
-                      verticalAlignment: 'top',
-                      withExternalLayout: true,
-                    },),
-                    /* @__PURE__ */ _jsx2(RichText, {
-                      __fromCanvasComponent: true,
-                      children: /* @__PURE__ */ _jsx2(React.Fragment, {
-                        children: /* @__PURE__ */ _jsx2(motion.h1, {
-                          style: {
-                            '--font-selector': 'R0Y7RE0gU2Fucy0zMDA=',
-                            '--framer-font-family': '"DM Sans", "DM Sans Placeholder", sans-serif',
-                            '--framer-font-size': '18px',
-                            '--framer-font-weight': '300',
-                            '--framer-text-alignment': 'center',
-                            '--framer-text-color': 'var(--extracted-gdpscs, rgb(166, 166, 166))',
-                          },
-                          children: '3 out of 5 people chatted have similar routine.',
-                        },),
-                      },),
-                      className: 'framer-pjpuoc',
-                      fonts: ['GF;DM Sans-300',],
-                      layoutDependency,
-                      layoutId: 'Ty3tsne4u',
-                      style: {
-                        '--extracted-gdpscs': 'rgb(166, 166, 166)',
-                        '--framer-link-text-color': 'rgb(0, 153, 255)',
-                        '--framer-link-text-decoration': 'underline',
-                      },
-                      verticalAlignment: 'top',
-                      withExternalLayout: true,
-                    },),
-                    /* @__PURE__ */ _jsx2(RichText, {
-                      __fromCanvasComponent: true,
-                      children: /* @__PURE__ */ _jsx2(React.Fragment, {
-                        children: /* @__PURE__ */ _jsx2(motion.h1, {
-                          style: {
-                            '--font-selector': 'R0Y7RE0gU2Fucy0zMDA=',
-                            '--framer-font-family': '"DM Sans", "DM Sans Placeholder", sans-serif',
-                            '--framer-font-size': '18px',
-                            '--framer-font-weight': '300',
-                            '--framer-text-alignment': 'center',
-                            '--framer-text-color': 'var(--extracted-gdpscs, rgb(166, 166, 166))',
-                          },
-                          children: '2,394,562 people are sh*tting at the same time with you',
-                        },),
-                      },),
-                      className: 'framer-9lx7v6',
-                      fonts: ['GF;DM Sans-300',],
-                      layoutDependency,
-                      layoutId: 'GYF1NVfFP',
-                      style: {
-                        '--extracted-gdpscs': 'rgb(166, 166, 166)',
-                        '--framer-link-text-color': 'rgb(0, 153, 255)',
-                        '--framer-link-text-decoration': 'underline',
-                      },
-                      verticalAlignment: 'top',
-                      withExternalLayout: true,
-                    },),
-                  ],
+                  },),
                 },),
               },),
+            },),
+            /* @__PURE__ */ _jsx5(RichText, {
+              __fromCanvasComponent: true,
+              children: /* @__PURE__ */ _jsx5(React4.Fragment, {
+                children: /* @__PURE__ */ _jsx5(motion4.h1, {
+                  className: 'framer-styles-preset-ame1jg',
+                  'data-styles-preset': 'e81t2mHNr',
+                  children: 'Nearby',
+                },),
+              },),
+              className: 'framer-1vil56d',
+              fonts: ['Inter',],
+              layoutDependency,
+              layoutId: 'C4dkcCQ3m',
+              style: { '--framer-link-text-color': 'rgb(0, 153, 255)', '--framer-link-text-decoration': 'underline', },
+              verticalAlignment: 'top',
+              withExternalLayout: true,
+            },),
+            /* @__PURE__ */ _jsx5(ComponentViewportProvider4, {
+              children: /* @__PURE__ */ _jsx5(Scroll, {
+                __fromCanvasComponent: true,
+                __fromCodeComponentNode: true,
+                _border: {},
+                background: null,
+                className: 'framer-1to0gb7',
+                contentOffsetX: 0,
+                contentOffsetY: 0,
+                direction: 'horizontal',
+                directionLock: true,
+                dragEnabled: true,
+                layoutDependency,
+                layoutId: 'vh5crfdgs',
+                native: true,
+                overdragEnabled: false,
+                resetOffset: false,
+                scrollBarVisible: false,
+                wheelEnabled: true,
+                children: /* @__PURE__ */ _jsx5(ComponentViewportProvider4, {
+                  width: '807px',
+                  children: /* @__PURE__ */ _jsx5(motion4.div, {
+                    className: 'framer-3ms3gg-container',
+                    layoutDependency,
+                    layoutId: 'pNUVbfrva-container',
+                    children: /* @__PURE__ */ _jsx5(stdin_default3, {
+                      height: '100%',
+                      id: 'pNUVbfrva',
+                      layoutId: 'pNUVbfrva',
+                      style: { height: '100%', width: '100%', },
+                      width: '100%',
+                    },),
+                  },),
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx5(RichText, {
+              __fromCanvasComponent: true,
+              children: /* @__PURE__ */ _jsx5(React4.Fragment, {
+                children: /* @__PURE__ */ _jsx5(motion4.h1, {
+                  className: 'framer-styles-preset-ame1jg',
+                  'data-styles-preset': 'e81t2mHNr',
+                  children: 'Last Chatted',
+                },),
+              },),
+              className: 'framer-ulqa5k',
+              fonts: ['Inter',],
+              layoutDependency,
+              layoutId: 'p8SZYVxWs',
+              style: { '--framer-link-text-color': 'rgb(0, 153, 255)', '--framer-link-text-decoration': 'underline', },
+              verticalAlignment: 'top',
+              withExternalLayout: true,
+            },),
+            /* @__PURE__ */ _jsx5(ComponentViewportProvider4, {
+              children: /* @__PURE__ */ _jsx5(motion4.div, {
+                className: 'framer-1fnj2fq-container',
+                layoutDependency,
+                layoutId: 'prsiV4FOm-container',
+                children: /* @__PURE__ */ _jsx5(Globe, {
+                  alignment: 'center',
+                  background: 'rgba(0, 0, 0, 0)',
+                  baseColor: 'rgb(255, 255, 255)',
+                  dark: 1,
+                  diffuse: 1.86,
+                  dragOptions: { damping: 40, mass: 1, stiffness: 200, },
+                  glowColor: 'rgb(255, 255, 255)',
+                  height: '100%',
+                  id: 'prsiV4FOm',
+                  isDraggable: true,
+                  layoutId: 'prsiV4FOm',
+                  mapBrightness: 12,
+                  markerArray: [
+                    { latitude: 52.3676, longitude: 4.9041, },
+                    { latitude: 33.1821, longitude: 4.9041, },
+                    { latitude: 52.3676, longitude: -15.2524, },
+                    { latitude: 52.3676, longitude: 56.7909, },
+                    { latitude: 42.1605, longitude: 28.0168, },
+                    { latitude: -55.006, longitude: -9.8437, },
+                    { latitude: 65.5529, longitude: -58.6298, },
+                    { latitude: 40.1052, longitude: -39.5913, },
+                    { latitude: 75.5859, longitude: 86.4303, },
+                    { latitude: -50.1923, longitude: -29.4772, },
+                    { latitude: -23.9062, longitude: -27.0974, },
+                    { latitude: 65.4988, longitude: -159.0144, },
+                    { latitude: 9.0595, longitude: 130.619, },
+                    { latitude: 52.3676, longitude: 180, },
+                    { latitude: 16.6046, longitude: 163.5577, },
+                    { latitude: -79.372, longitude: -34.1827, },
+                    { latitude: 31.3431, longitude: 122.7224, },
+                  ],
+                  markerColor: 'rgb(255, 121, 173)',
+                  markerSize: 0.05,
+                  maxSamples: 9135,
+                  maxWidth: 800,
+                  offset: { offsetX: -69, offsetY: -44, },
+                  phi: 0,
+                  scale: 1.05,
+                  speed: 0.3,
+                  style: { height: '100%', width: '100%', },
+                  theta: 0.3,
+                  width: '100%',
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx5(RichText, {
+              __fromCanvasComponent: true,
+              children: /* @__PURE__ */ _jsx5(React4.Fragment, {
+                children: /* @__PURE__ */ _jsx5(motion4.h1, {
+                  className: 'framer-styles-preset-ame1jg',
+                  'data-styles-preset': 'e81t2mHNr',
+                  children: 'Discover',
+                },),
+              },),
+              className: 'framer-1fizh3a',
+              fonts: ['Inter',],
+              layoutDependency,
+              layoutId: 'VbRWv6QUF',
+              style: { '--framer-link-text-color': 'rgb(0, 153, 255)', '--framer-link-text-decoration': 'underline', },
+              verticalAlignment: 'top',
+              withExternalLayout: true,
+            },),
+            /* @__PURE__ */ _jsx5(RichText, {
+              __fromCanvasComponent: true,
+              children: /* @__PURE__ */ _jsx5(React4.Fragment, {
+                children: /* @__PURE__ */ _jsx5(motion4.h1, {
+                  style: {
+                    '--font-selector': 'R0Y7RE0gU2Fucy0zMDA=',
+                    '--framer-font-family': '"DM Sans", "DM Sans Placeholder", sans-serif',
+                    '--framer-font-size': '18px',
+                    '--framer-font-weight': '300',
+                    '--framer-text-alignment': 'left',
+                    '--framer-text-color': 'var(--extracted-gdpscs, rgb(166, 166, 166))',
+                  },
+                  children: '18 people are sh*tting within 5 miles.',
+                },),
+              },),
+              className: 'framer-w53fju',
+              fonts: ['GF;DM Sans-300',],
+              layoutDependency,
+              layoutId: 'TFKLu0X1a',
+              style: {
+                '--extracted-gdpscs': 'rgb(166, 166, 166)',
+                '--framer-link-text-color': 'rgb(0, 153, 255)',
+                '--framer-link-text-decoration': 'underline',
+              },
+              verticalAlignment: 'top',
+              withExternalLayout: true,
+            },),
+            /* @__PURE__ */ _jsx5(RichText, {
+              __fromCanvasComponent: true,
+              children: /* @__PURE__ */ _jsx5(React4.Fragment, {
+                children: /* @__PURE__ */ _jsx5(motion4.h1, {
+                  style: {
+                    '--font-selector': 'R0Y7RE0gU2Fucy0zMDA=',
+                    '--framer-font-family': '"DM Sans", "DM Sans Placeholder", sans-serif',
+                    '--framer-font-size': '18px',
+                    '--framer-font-weight': '300',
+                    '--framer-text-alignment': 'center',
+                    '--framer-text-color': 'var(--extracted-gdpscs, rgb(166, 166, 166))',
+                  },
+                  children: '3 out of 5 people chatted have similar routine.',
+                },),
+              },),
+              className: 'framer-1qcxt9y',
+              fonts: ['GF;DM Sans-300',],
+              layoutDependency,
+              layoutId: 'sFPw1n0lo',
+              style: {
+                '--extracted-gdpscs': 'rgb(166, 166, 166)',
+                '--framer-link-text-color': 'rgb(0, 153, 255)',
+                '--framer-link-text-decoration': 'underline',
+              },
+              verticalAlignment: 'top',
+              withExternalLayout: true,
+            },),
+            /* @__PURE__ */ _jsx5(RichText, {
+              __fromCanvasComponent: true,
+              children: /* @__PURE__ */ _jsx5(React4.Fragment, {
+                children: /* @__PURE__ */ _jsx5(motion4.h1, {
+                  style: {
+                    '--font-selector': 'R0Y7RE0gU2Fucy0zMDA=',
+                    '--framer-font-family': '"DM Sans", "DM Sans Placeholder", sans-serif',
+                    '--framer-font-size': '18px',
+                    '--framer-font-weight': '300',
+                    '--framer-text-alignment': 'center',
+                    '--framer-text-color': 'var(--extracted-gdpscs, rgb(166, 166, 166))',
+                  },
+                  children: '2,394,562 people are sh*tting at the same time with you',
+                },),
+              },),
+              className: 'framer-1ovebhh',
+              fonts: ['GF;DM Sans-300',],
+              layoutDependency,
+              layoutId: 'f3LZNFzWd',
+              style: {
+                '--extracted-gdpscs': 'rgb(166, 166, 166)',
+                '--framer-link-text-color': 'rgb(0, 153, 255)',
+                '--framer-link-text-decoration': 'underline',
+              },
+              verticalAlignment: 'top',
+              withExternalLayout: true,
             },),
           ],
         },),
@@ -1529,69 +1865,27 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
     },),
   },);
 },);
-var css2 = [
+var css5 = [
   '@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }',
-  '.framer-FfuU5.framer-15bpjuw, .framer-FfuU5 .framer-15bpjuw { display: block; }',
-  '.framer-FfuU5.framer-cu5isx { height: 790px; overflow: hidden; position: relative; width: 386px; }',
-  '.framer-FfuU5 .framer-h3p0s1 { bottom: 15px; flex: none; height: 81px; left: calc(50.00000000000002% - 364px / 2); overflow: hidden; position: absolute; width: 364px; }',
-  '.framer-FfuU5 .framer-emedg8 { aspect-ratio: 0.4888888888888889 / 1; flex: none; height: var(--framer-aspect-ratio-supported, 790px); left: 0px; overflow: visible; position: absolute; right: 0px; top: 0px; }',
-  '.framer-FfuU5 .framer-1nytdig-container { flex: none; height: auto; left: 50%; position: absolute; top: 29px; width: 79px; }',
-  '.framer-FfuU5 .framer-1xwtt6l { cursor: pointer; flex: none; height: 15px; left: calc(47.66839378238344% - 64px / 2); overflow: visible; position: absolute; top: 32px; width: 64px; }',
-  '.framer-FfuU5 .framer-agc84h-container { bottom: 38px; flex: none; height: 37px; position: absolute; right: 72px; width: 37px; }',
-  '.framer-FfuU5 .framer-1399mgx-container { bottom: 38px; flex: none; height: 37px; left: calc(49.74093264248707% - 37px / 2); position: absolute; width: 37px; }',
-  '.framer-FfuU5 .framer-l6hkuc-container { bottom: 38px; flex: none; height: 37px; left: 71px; position: absolute; width: 37px; }',
-  '.framer-FfuU5 .framer-1jjo2l1 { flex: none; height: 633px; left: calc(50.00000000000002% - 348px / 2); position: absolute; top: calc(47.721518987341796% - 633px / 2); width: 348px; }',
-  '.framer-FfuU5 .framer-17h88q3 { height: 1089px; overflow: hidden; position: relative; width: 386px; }',
-  '.framer-FfuU5 .framer-1ju2mjk { flex: none; height: 165px; left: calc(48.96373056994821% - 319px / 2); position: absolute; top: calc(13.18027210884356% - 165px / 2); width: 319px; }',
-  '.framer-FfuU5 .framer-pyhjcm, .framer-FfuU5 .framer-1ru9kum { height: 183px; overflow: hidden; position: relative; width: 807px; }',
-  '.framer-FfuU5 .framer-17j2xs3-container { flex: none; height: 150px; left: 6px; position: absolute; top: calc(50.00000000000002% - 150px / 2); width: 150px; }',
-  '.framer-FfuU5 .framer-1dcx8zh-container { flex: none; height: 150px; left: 164px; position: absolute; top: calc(50.00000000000002% - 150px / 2); width: 149px; }',
-  '.framer-FfuU5 .framer-4m0fpj-container { flex: none; height: 150px; left: calc(48.949320148331296% - 150px / 2); position: absolute; top: calc(50.00000000000002% - 150px / 2); width: 150px; }',
-  '.framer-FfuU5 .framer-nm1qoy-container { flex: none; height: 150px; position: absolute; right: 181px; top: calc(50.00000000000002% - 150px / 2); width: 149px; }',
-  '.framer-FfuU5 .framer-1igp7ei-container { flex: none; height: 150px; position: absolute; right: 23px; top: calc(50.00000000000002% - 150px / 2); width: 150px; }',
-  '.framer-FfuU5 .framer-1k1wgkf-container { flex: none; height: auto; left: 51px; position: absolute; top: 51%; width: 79px; }',
-  '.framer-FfuU5 .framer-17cpsnd { flex: none; height: 15px; left: 54px; overflow: visible; position: absolute; top: calc(50.27322404371587% - 15px / 2); width: 64px; }',
-  '.framer-FfuU5 .framer-1hlfwbm-container { flex: none; height: auto; left: 210px; position: absolute; top: 51%; width: 79px; }',
-  '.framer-FfuU5 .framer-1xdn9by { flex: none; height: 15px; left: 213px; overflow: visible; position: absolute; top: calc(50.27322404371587% - 15px / 2); width: 64px; }',
-  '.framer-FfuU5 .framer-13p09ur-container { flex: none; height: auto; left: 50%; position: absolute; top: 51%; width: 79px; }',
-  '.framer-FfuU5 .framer-1jbbaq3 { flex: none; height: 15px; left: calc(49.5662949194548% - 64px / 2); overflow: visible; position: absolute; top: calc(50.27322404371587% - 15px / 2); width: 64px; }',
-  '.framer-FfuU5 .framer-18wej7g-container { flex: none; height: auto; position: absolute; right: 207px; top: 51%; width: 79px; }',
-  '.framer-FfuU5 .framer-14gfx5i { flex: none; height: 15px; overflow: visible; position: absolute; right: 218px; top: calc(50.27322404371587% - 15px / 2); width: 64px; }',
-  '.framer-FfuU5 .framer-owupxq-container { flex: none; height: auto; position: absolute; right: 45px; top: 51%; width: 79px; }',
-  '.framer-FfuU5 .framer-1jpdh45 { flex: none; height: 15px; overflow: visible; position: absolute; right: 56px; top: calc(50.27322404371587% - 15px / 2); width: 64px; }',
-  '.framer-FfuU5 .framer-a1pias { flex: none; height: 18px; left: calc(37.04663212435235% - 209px / 2); position: absolute; top: calc(3.2139577594123274% - 18px / 2); white-space: pre-wrap; width: 209px; word-break: break-word; word-wrap: break-word; }',
-  '.framer-FfuU5 .framer-ixfcli { flex: none; height: 165px; left: calc(48.96373056994821% - 319px / 2); position: absolute; top: calc(40.86317722681361% - 165px / 2); width: 319px; }',
-  '.framer-FfuU5 .framer-101axot-container { flex: none; height: 150px; position: absolute; right: 21px; top: calc(50.27322404371587% - 150px / 2); width: 150px; }',
-  '.framer-FfuU5 .framer-1tnrd59-container { flex: none; height: 150px; position: absolute; right: 179px; top: calc(50.27322404371587% - 150px / 2); width: 149px; }',
-  '.framer-FfuU5 .framer-754ovr { flex: none; height: 150px; left: 6px; overflow: visible; position: absolute; top: calc(50.27322404371587% - 150px / 2); width: 150px; }',
-  '.framer-FfuU5 .framer-5afurw-container, .framer-FfuU5 .framer-1ax11a3-container { bottom: 0px; flex: none; left: 0px; position: absolute; right: 0px; top: 0px; }',
-  '.framer-FfuU5 .framer-qqq4rk-container { flex: none; height: 150px; left: 164px; position: absolute; top: calc(50.27322404371587% - 150px / 2); width: 149px; }',
-  '.framer-FfuU5 .framer-1y8s7uj { flex: none; height: 150px; left: calc(49.07063197026025% - 150px / 2); overflow: visible; position: absolute; top: calc(50.27322404371587% - 150px / 2); width: 150px; }',
-  '.framer-FfuU5 .framer-1fcly34-container { flex: none; height: auto; left: 208px; position: absolute; top: 50%; width: 79px; }',
-  '.framer-FfuU5 .framer-ef4rbq { flex: none; height: 15px; left: 211px; overflow: visible; position: absolute; top: calc(49.72677595628417% - 15px / 2); width: 64px; }',
-  '.framer-FfuU5 .framer-29ubu7-container { flex: none; height: auto; position: absolute; right: 204px; top: 50%; width: 79px; }',
-  '.framer-FfuU5 .framer-4ni5zo { flex: none; height: 15px; overflow: visible; position: absolute; right: 215px; top: calc(49.72677595628417% - 15px / 2); width: 64px; }',
-  '.framer-FfuU5 .framer-ys3xfw-container { flex: none; height: auto; position: absolute; right: 46px; top: 50%; width: 79px; }',
-  '.framer-FfuU5 .framer-1vxexsj { flex: none; height: 15px; overflow: visible; position: absolute; right: 57px; top: calc(49.72677595628417% - 15px / 2); width: 64px; }',
-  '.framer-FfuU5 .framer-cmc2uy { flex: none; height: 18px; left: calc(37.04663212435235% - 209px / 2); position: absolute; top: calc(30.578512396694236% - 18px / 2); white-space: pre-wrap; width: 209px; word-break: break-word; word-wrap: break-word; }',
-  '.framer-FfuU5 .framer-r1xlzr-container { flex: none; height: 324px; left: calc(54.40414507772024% - 345px / 2); position: absolute; top: calc(77.13498622589535% - 324px / 2); width: 345px; }',
-  '.framer-FfuU5 .framer-143eqw0 { flex: none; height: 18px; left: calc(37.04663212435235% - 209px / 2); position: absolute; top: calc(58.76951331496788% - 18px / 2); white-space: pre-wrap; width: 209px; word-break: break-word; word-wrap: break-word; }',
-  '.framer-FfuU5 .framer-19jcjv8 { flex: none; height: 18px; left: calc(49.74093264248707% - 303px / 2); position: absolute; top: calc(22.865013774104707% - 18px / 2); white-space: pre-wrap; width: 303px; word-break: break-word; word-wrap: break-word; }',
-  '.framer-FfuU5 .framer-pjpuoc { flex: none; height: 42px; left: calc(49.74093264248707% - 303px / 2); position: absolute; top: calc(51.606978879706176% - 42px / 2); white-space: pre-wrap; width: 303px; word-break: break-word; word-wrap: break-word; }',
-  '.framer-FfuU5 .framer-9lx7v6 { flex: none; height: 42px; left: calc(50.777202072538884% - 303px / 2); position: absolute; top: calc(93.48025711662078% - 42px / 2); white-space: pre-wrap; width: 303px; word-break: break-word; word-wrap: break-word; }',
+  '.framer-YgkO3.framer-1ummqts, .framer-YgkO3 .framer-1ummqts { display: block; }',
+  '.framer-YgkO3.framer-1i19mzh { height: 1089px; overflow: hidden; position: relative; width: 386px; }',
+  '.framer-YgkO3 .framer-11ugzxo { flex: none; height: 165px; left: calc(48.96373056994821% - 319px / 2); position: absolute; top: calc(13.18027210884356% - 165px / 2); width: 319px; }',
+  '.framer-YgkO3 .framer-1w6lvat-container, .framer-YgkO3 .framer-3ms3gg-container { height: 183px; position: relative; width: 807px; }',
+  '.framer-YgkO3 .framer-1vil56d { flex: none; height: 18px; left: calc(37.04663212435235% - 209px / 2); position: absolute; top: calc(3.2139577594123274% - 18px / 2); white-space: pre-wrap; width: 209px; word-break: break-word; word-wrap: break-word; }',
+  '.framer-YgkO3 .framer-1to0gb7 { flex: none; height: 165px; left: calc(48.96373056994821% - 319px / 2); position: absolute; top: calc(40.86317722681361% - 165px / 2); width: 319px; }',
+  '.framer-YgkO3 .framer-ulqa5k { flex: none; height: 18px; left: calc(37.04663212435235% - 209px / 2); position: absolute; top: calc(30.578512396694236% - 18px / 2); white-space: pre-wrap; width: 209px; word-break: break-word; word-wrap: break-word; }',
+  '.framer-YgkO3 .framer-1fnj2fq-container { flex: none; height: 324px; left: calc(54.40414507772024% - 345px / 2); position: absolute; top: calc(77.13498622589535% - 324px / 2); width: 345px; }',
+  '.framer-YgkO3 .framer-1fizh3a { flex: none; height: 18px; left: calc(37.04663212435235% - 209px / 2); position: absolute; top: calc(58.76951331496788% - 18px / 2); white-space: pre-wrap; width: 209px; word-break: break-word; word-wrap: break-word; }',
+  '.framer-YgkO3 .framer-w53fju { flex: none; height: 18px; left: calc(49.74093264248707% - 303px / 2); position: absolute; top: calc(22.865013774104707% - 18px / 2); white-space: pre-wrap; width: 303px; word-break: break-word; word-wrap: break-word; }',
+  '.framer-YgkO3 .framer-1qcxt9y { flex: none; height: 42px; left: calc(49.74093264248707% - 303px / 2); position: absolute; top: calc(51.606978879706176% - 42px / 2); white-space: pre-wrap; width: 303px; word-break: break-word; word-wrap: break-word; }',
+  '.framer-YgkO3 .framer-1ovebhh { flex: none; height: 42px; left: calc(50.777202072538884% - 303px / 2); position: absolute; top: calc(93.48025711662078% - 42px / 2); white-space: pre-wrap; width: 303px; word-break: break-word; word-wrap: break-word; }',
   ...css,
 ];
-var Framera4fbduHHq = withCSS(Component, css2, 'framer-FfuU5',);
-var stdin_default = Framera4fbduHHq;
-Framera4fbduHHq.displayName = 'MAIN';
-Framera4fbduHHq.defaultProps = { height: 790, width: 386, };
-addPropertyControls2(Framera4fbduHHq, {
-  Nm_Wn7C7e: { title: 'Tap', type: ControlType2.EventHandler, },
-  Fx4ipBJTf: { title: 'Tap 2', type: ControlType2.EventHandler, },
-  vWkvp9dsR: { title: 'Tap 3', type: ControlType2.EventHandler, },
-  h6UG5esH9: { title: 'Tap 4', type: ControlType2.EventHandler, },
-},);
-addFonts(Framera4fbduHHq, [
+var FramerfLExZKtD2 = withCSS4(Component4, css5, 'framer-YgkO3',);
+var stdin_default4 = FramerfLExZKtD2;
+FramerfLExZKtD2.displayName = 'scroll-MAIN';
+FramerfLExZKtD2.defaultProps = { height: 1089, width: 386, };
+addFonts4(FramerfLExZKtD2, [
   {
     explicitInter: true,
     fonts: [{
@@ -1652,18 +1946,378 @@ addFonts(Framera4fbduHHq, [
       weight: '300',
     },],
   },
-  ...ClockFonts,
-  ...IconoirFonts,
-  ...ConicFonts,
+  ...ScrollMAINNearbyFonts,
+  ...ScrollMAINLastchattedFonts,
   ...GlobeFonts,
   ...getFontsFromSharedStyle(fonts,),
 ], { supportsExplicitInterCodegen: true, },);
 
+// https :https://framerusercontent.com/modules/wFs68VIlZEGIGXaOv4gQ/LLDHltZwv3pIplXdZRls/OVmbzyyRm.js
+import { jsx as _jsx6, } from 'react/jsx-runtime';
+import {
+  addFonts as addFonts5,
+  ComponentViewportProvider as ComponentViewportProvider5,
+  cx as cx5,
+  getFonts as getFonts5,
+  useComponentViewport as useComponentViewport5,
+  useLocaleInfo as useLocaleInfo5,
+  useVariantState as useVariantState5,
+  withCSS as withCSS5,
+} from 'unframer';
+import { LayoutGroup as LayoutGroup5, motion as motion5, MotionConfigContext as MotionConfigContext5, } from 'unframer';
+import * as React5 from 'react';
+var ClockFonts3 = getFonts5(Clock,);
+var cycleOrder5 = ['lNxAXWIIb',];
+var serializationHash5 = 'framer-K58Mq';
+var variantClassNames5 = { lNxAXWIIb: 'framer-v-7f7s4r', };
+var transition15 = { damping: 60, delay: 0, mass: 1, stiffness: 500, type: 'spring', };
+var transformTemplate13 = (_, t,) => `translate(-50%, -50%) ${t}`;
+var Transition5 = ({ value, children, },) => {
+  const config = React5.useContext(MotionConfigContext5,);
+  const transition = value !== null && value !== void 0 ? value : config.transition;
+  const contextValue = React5.useMemo(() => ({ ...config, transition, }), [JSON.stringify(transition,),],);
+  return /* @__PURE__ */ _jsx6(MotionConfigContext5.Provider, { value: contextValue, children, },);
+};
+var Variants5 = motion5(React5.Fragment,);
+var getProps5 = ({ height, id, width, ...props },) => {
+  return { ...props, };
+};
+var createLayoutDependency5 = (props, variants,) => variants.join('-',) + props.layoutDependency;
+var Component5 = /* @__PURE__ */ React5.forwardRef(function (props, ref,) {
+  const { activeLocale, setLocale, } = useLocaleInfo5();
+  const { style, className: className2, layoutId, variant, ...restProps } = getProps5(props,);
+  const { baseVariant, classNames, gestureVariant, setGestureState, setVariant, variants, } = useVariantState5({
+    cycleOrder: cycleOrder5,
+    defaultVariant: 'lNxAXWIIb',
+    variant,
+    variantClassNames: variantClassNames5,
+  },);
+  const layoutDependency = createLayoutDependency5(props, variants,);
+  const ref1 = React5.useRef(null,);
+  const defaultLayoutId = React5.useId();
+  const sharedStyleClassNames = [];
+  const componentViewport = useComponentViewport5();
+  return /* @__PURE__ */ _jsx6(LayoutGroup5, {
+    id: layoutId !== null && layoutId !== void 0 ? layoutId : defaultLayoutId,
+    children: /* @__PURE__ */ _jsx6(Variants5, {
+      animate: variants,
+      initial: false,
+      children: /* @__PURE__ */ _jsx6(Transition5, {
+        value: transition15,
+        children: /* @__PURE__ */ _jsx6(motion5.div, {
+          ...restProps,
+          className: cx5(serializationHash5, ...sharedStyleClassNames, 'framer-7f7s4r', className2, classNames,),
+          'data-framer-name': 'Variant 1',
+          layoutDependency,
+          layoutId: 'lNxAXWIIb',
+          onHoverEnd: () => setGestureState({ isHovered: false, },),
+          onHoverStart: () => setGestureState({ isHovered: true, },),
+          onTap: () => setGestureState({ isPressed: false, },),
+          onTapCancel: () => setGestureState({ isPressed: false, },),
+          onTapStart: () => setGestureState({ isPressed: true, },),
+          ref: ref !== null && ref !== void 0 ? ref : ref1,
+          style: { backgroundColor: 'rgb(255, 255, 255)', ...style, },
+          children: /* @__PURE__ */ _jsx6(motion5.div, {
+            className: 'framer-18omyck',
+            layoutDependency,
+            layoutId: 'fjS4wPsVo',
+            style: {
+              backgroundColor: 'rgb(12, 12, 12)',
+              borderBottomLeftRadius: 20,
+              borderBottomRightRadius: 20,
+              borderTopLeftRadius: 20,
+              borderTopRightRadius: 20,
+            },
+            children: /* @__PURE__ */ _jsx6(ComponentViewportProvider5, {
+              children: /* @__PURE__ */ _jsx6(motion5.div, {
+                className: 'framer-8x9ulz-container',
+                layoutDependency,
+                layoutId: 'IJZVUgxEv-container',
+                transformTemplate: transformTemplate13,
+                children: /* @__PURE__ */ _jsx6(Clock, {
+                  ampmCase: 'uppercase',
+                  color: 'rgb(255, 255, 255)',
+                  font: {
+                    fontFamily: '"Inter", sans-serif',
+                    fontSize: '22px',
+                    fontStyle: 'normal',
+                    letterSpacing: '0em',
+                    lineHeight: '1em',
+                  },
+                  height: '100%',
+                  id: 'IJZVUgxEv',
+                  is12hour: true,
+                  layoutId: 'IJZVUgxEv',
+                  prefix: '',
+                  seconds: true,
+                  suffix: '',
+                  textSelect: true,
+                  timeZone: false,
+                  width: '100%',
+                },),
+              },),
+            },),
+          },),
+        },),
+      },),
+    },),
+  },);
+},);
+var css6 = [
+  '@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }',
+  '.framer-K58Mq.framer-r6vhcd, .framer-K58Mq .framer-r6vhcd { display: block; }',
+  '.framer-K58Mq.framer-7f7s4r { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; height: 59px; justify-content: space-evenly; overflow: hidden; padding: 0px; position: relative; width: 390px; }',
+  '.framer-K58Mq .framer-18omyck { flex: none; height: 36px; overflow: visible; position: relative; width: 120px; }',
+  '.framer-K58Mq .framer-8x9ulz-container { flex: none; height: auto; left: 50%; position: absolute; top: 50%; width: auto; }',
+];
+var FramerOVmbzyyRm = withCSS5(Component5, css6, 'framer-K58Mq',);
+var stdin_default5 = FramerOVmbzyyRm;
+FramerOVmbzyyRm.displayName = 'topBar';
+FramerOVmbzyyRm.defaultProps = { height: 59, width: 390, };
+addFonts5(FramerOVmbzyyRm, [{
+  explicitInter: true,
+  fonts: [{
+    family: 'Inter',
+    source: 'framer',
+    style: 'normal',
+    unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+    url: 'https://app.framerstatic.com/Inter-Regular.cyrillic-ext-CFTLRB35.woff2',
+    weight: '400',
+  }, {
+    family: 'Inter',
+    source: 'framer',
+    style: 'normal',
+    unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+    url: 'https://app.framerstatic.com/Inter-Regular.cyrillic-KKLZBALH.woff2',
+    weight: '400',
+  }, {
+    family: 'Inter',
+    source: 'framer',
+    style: 'normal',
+    unicodeRange: 'U+1F00-1FFF',
+    url: 'https://app.framerstatic.com/Inter-Regular.greek-ext-ULEBLIFV.woff2',
+    weight: '400',
+  }, {
+    family: 'Inter',
+    source: 'framer',
+    style: 'normal',
+    unicodeRange: 'U+0370-03FF',
+    url: 'https://app.framerstatic.com/Inter-Regular.greek-IRHSNFQB.woff2',
+    weight: '400',
+  }, {
+    family: 'Inter',
+    source: 'framer',
+    style: 'normal',
+    unicodeRange: 'U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+    url: 'https://app.framerstatic.com/Inter-Regular.latin-ext-VZDUGU3Q.woff2',
+    weight: '400',
+  }, {
+    family: 'Inter',
+    source: 'framer',
+    style: 'normal',
+    unicodeRange:
+      'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+    url: 'https://app.framerstatic.com/Inter-Regular.latin-JLQMKCHE.woff2',
+    weight: '400',
+  }, {
+    family: 'Inter',
+    source: 'framer',
+    style: 'normal',
+    unicodeRange: 'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB',
+    url: 'https://app.framerstatic.com/Inter-Regular.vietnamese-QK7VSWXK.woff2',
+    weight: '400',
+  },],
+}, ...ClockFonts3,], { supportsExplicitInterCodegen: true, },);
+
+// https :https://framerusercontent.com/modules/HXymEkHPIaZc2RDzewa7/bJTVAFPZDwsWax2wk6D7/Ibtk5tWbC.js
+var ScrollMAINFonts = getFonts6(stdin_default4,);
+var NavbarFonts = getFonts6(stdin_default,);
+var TopBarFonts = getFonts6(stdin_default5,);
+var cycleOrder6 = ['rI_uBlpkT',];
+var serializationHash6 = 'framer-UC11C';
+var variantClassNames6 = { rI_uBlpkT: 'framer-v-d255u8', };
+var transition16 = { damping: 60, delay: 0, mass: 1, stiffness: 500, type: 'spring', };
+var Transition6 = ({ value, children, },) => {
+  const config = React6.useContext(MotionConfigContext6,);
+  const transition = value !== null && value !== void 0 ? value : config.transition;
+  const contextValue = React6.useMemo(() => ({ ...config, transition, }), [JSON.stringify(transition,),],);
+  return /* @__PURE__ */ _jsx7(MotionConfigContext6.Provider, { value: contextValue, children, },);
+};
+var Variants6 = motion6(React6.Fragment,);
+var getProps6 = ({ height, id, tap, tap2, tap3, width, ...props },) => {
+  return {
+    ...props,
+    Glgbacyr9: tap !== null && tap !== void 0 ? tap : props.Glgbacyr9,
+    JgwibSzAf: tap3 !== null && tap3 !== void 0 ? tap3 : props.JgwibSzAf,
+    PLI1T7Ax1: tap2 !== null && tap2 !== void 0 ? tap2 : props.PLI1T7Ax1,
+  };
+};
+var createLayoutDependency6 = (props, variants,) => variants.join('-',) + props.layoutDependency;
+var Component6 = /* @__PURE__ */ React6.forwardRef(function (props, ref,) {
+  const { activeLocale, setLocale, } = useLocaleInfo6();
+  const { style, className: className2, layoutId, variant, Glgbacyr9, PLI1T7Ax1, JgwibSzAf, ...restProps } = getProps6(props,);
+  const { baseVariant, classNames, gestureVariant, setGestureState, setVariant, variants, } = useVariantState6({
+    cycleOrder: cycleOrder6,
+    defaultVariant: 'rI_uBlpkT',
+    variant,
+    variantClassNames: variantClassNames6,
+  },);
+  const layoutDependency = createLayoutDependency6(props, variants,);
+  const { activeVariantCallback, delay, } = useActiveVariantCallback3(baseVariant,);
+  const UbCBf8rh61da68a4 = activeVariantCallback(async (...args) => {
+    if (Glgbacyr9) {
+      const res = await Glgbacyr9(...args,);
+      if (res === false) {
+        return false;
+      }
+    }
+  },);
+  const l4EmAYs9B1qwzdkb = activeVariantCallback(async (...args) => {
+    if (PLI1T7Ax1) {
+      const res = await PLI1T7Ax1(...args,);
+      if (res === false) {
+        return false;
+      }
+    }
+  },);
+  const o2wfaBicHjs7ziu = activeVariantCallback(async (...args) => {
+    if (JgwibSzAf) {
+      const res = await JgwibSzAf(...args,);
+      if (res === false) {
+        return false;
+      }
+    }
+  },);
+  const ref1 = React6.useRef(null,);
+  const defaultLayoutId = React6.useId();
+  const sharedStyleClassNames = [];
+  const componentViewport = useComponentViewport6();
+  return /* @__PURE__ */ _jsx7(LayoutGroup6, {
+    id: layoutId !== null && layoutId !== void 0 ? layoutId : defaultLayoutId,
+    children: /* @__PURE__ */ _jsx7(Variants6, {
+      animate: variants,
+      initial: false,
+      children: /* @__PURE__ */ _jsx7(Transition6, {
+        value: transition16,
+        children: /* @__PURE__ */ _jsxs5(motion6.div, {
+          ...restProps,
+          className: cx6(serializationHash6, ...sharedStyleClassNames, 'framer-d255u8', className2, classNames,),
+          'data-framer-name': 'Variant 1',
+          layoutDependency,
+          layoutId: 'rI_uBlpkT',
+          onHoverEnd: () => setGestureState({ isHovered: false, },),
+          onHoverStart: () => setGestureState({ isHovered: true, },),
+          onTap: () => setGestureState({ isPressed: false, },),
+          onTapCancel: () => setGestureState({ isPressed: false, },),
+          onTapStart: () => setGestureState({ isPressed: true, },),
+          ref: ref !== null && ref !== void 0 ? ref : ref1,
+          style: { backgroundColor: 'rgb(255, 255, 255)', ...style, },
+          children: [
+            /* @__PURE__ */ _jsx7(ComponentViewportProvider6, {
+              children: /* @__PURE__ */ _jsx7(Scroll2, {
+                __fromCanvasComponent: true,
+                __fromCodeComponentNode: true,
+                _border: {},
+                background: null,
+                className: 'framer-arok4m',
+                contentOffsetX: 0,
+                contentOffsetY: 0,
+                direction: 'vertical',
+                directionLock: true,
+                dragEnabled: true,
+                layoutDependency,
+                layoutId: 'Lv80djk05',
+                native: true,
+                overdragEnabled: false,
+                resetOffset: false,
+                scrollBarVisible: false,
+                wheelEnabled: true,
+                children: /* @__PURE__ */ _jsx7(ComponentViewportProvider6, {
+                  width: '386px',
+                  children: /* @__PURE__ */ _jsx7(motion6.div, {
+                    className: 'framer-1b9i5es-container',
+                    layoutDependency,
+                    layoutId: 'R2drSe8jH-container',
+                    children: /* @__PURE__ */ _jsx7(stdin_default4, {
+                      height: '100%',
+                      id: 'R2drSe8jH',
+                      layoutId: 'R2drSe8jH',
+                      style: { height: '100%', width: '100%', },
+                      width: '100%',
+                    },),
+                  },),
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx7(ComponentViewportProvider6, {
+              width: (componentViewport === null || componentViewport === void 0 ? void 0 : componentViewport.width) || '100vw',
+              children: /* @__PURE__ */ _jsx7(motion6.div, {
+                className: 'framer-10jw8u3-container',
+                'data-framer-name': 'navBar',
+                layoutDependency,
+                layoutId: 'duRxWsKLU-container',
+                name: 'navBar',
+                children: /* @__PURE__ */ _jsx7(stdin_default, {
+                  height: '100%',
+                  id: 'duRxWsKLU',
+                  l4EmAYs9B: l4EmAYs9B1qwzdkb,
+                  layoutId: 'duRxWsKLU',
+                  name: 'navBar',
+                  o2wfaBicH: o2wfaBicHjs7ziu,
+                  style: { height: '100%', width: '100%', },
+                  UbCBf8rh6: UbCBf8rh61da68a4,
+                  width: '100%',
+                },),
+              },),
+            },),
+            /* @__PURE__ */ _jsx7(ComponentViewportProvider6, {
+              width: (componentViewport === null || componentViewport === void 0 ? void 0 : componentViewport.width) || '100vw',
+              children: /* @__PURE__ */ _jsx7(motion6.div, {
+                className: 'framer-g4nkvh-container',
+                layoutDependency,
+                layoutId: 'G04IrugVF-container',
+                children: /* @__PURE__ */ _jsx7(stdin_default5, {
+                  height: '100%',
+                  id: 'G04IrugVF',
+                  layoutId: 'G04IrugVF',
+                  style: { height: '100%', width: '100%', },
+                  width: '100%',
+                },),
+              },),
+            },),
+          ],
+        },),
+      },),
+    },),
+  },);
+},);
+var css7 = [
+  '@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }',
+  '.framer-UC11C.framer-139xkcl, .framer-UC11C .framer-139xkcl { display: block; }',
+  '.framer-UC11C.framer-d255u8 { height: 844px; overflow: hidden; position: relative; width: 390px; }',
+  '.framer-UC11C .framer-arok4m { flex: none; height: 704px; left: 0px; position: absolute; right: 0px; top: calc(48.696682464455% - 704px / 2); }',
+  '.framer-UC11C .framer-1b9i5es-container { height: 1089px; position: relative; width: 386px; }',
+  '.framer-UC11C .framer-10jw8u3-container { bottom: 0px; flex: none; height: 81px; left: 0px; position: absolute; right: 0px; }',
+  '.framer-UC11C .framer-g4nkvh-container { flex: none; height: 59px; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 1; }',
+];
+var FramerIbtk5tWbC = withCSS6(Component6, css7, 'framer-UC11C',);
+var stdin_default6 = FramerIbtk5tWbC;
+FramerIbtk5tWbC.displayName = 'V2 - main';
+FramerIbtk5tWbC.defaultProps = { height: 844, width: 390, };
+addPropertyControls4(FramerIbtk5tWbC, {
+  Glgbacyr9: { title: 'Tap', type: ControlType4.EventHandler, },
+  PLI1T7Ax1: { title: 'Tap 2', type: ControlType4.EventHandler, },
+  JgwibSzAf: { title: 'Tap 3', type: ControlType4.EventHandler, },
+},);
+addFonts6(FramerIbtk5tWbC, [{ explicitInter: true, fonts: [], }, ...ScrollMAINFonts, ...NavbarFonts, ...TopBarFonts,], {
+  supportsExplicitInterCodegen: true,
+},);
+
 // virtual:main
 import { WithFramerBreakpoints, } from 'unframer';
 import { jsx, } from 'react/jsx-runtime';
-stdin_default.Responsive = (props,) => {
-  return /* @__PURE__ */ jsx(WithFramerBreakpoints, { Component: stdin_default, ...props, },);
+stdin_default6.Responsive = (props,) => {
+  return /* @__PURE__ */ jsx(WithFramerBreakpoints, { Component: stdin_default6, ...props, },);
 };
-var main_default = stdin_default;
+var main_default = stdin_default6;
 export { main_default as default, };

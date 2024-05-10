@@ -1,6 +1,6 @@
-import Account from "../../framer/account"
 import { createClient } from "@/utils/supabase/server";
 import '../../framer/styles.css'
+import Verify from "../../framer/verify"
 
 export default async function Page() {
   const canInitSupabaseClient = () => {
@@ -18,7 +18,7 @@ export default async function Page() {
 
   return (
     <div className="flex-1 w-full flex flex-col gap-20 items-center">
-        <Account />
+        <Verify />
     </div>
   );
 }

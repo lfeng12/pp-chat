@@ -1,21 +1,24 @@
 /* eslint-disable */
 import { defaultEvents, } from './chunk-JJFCSOIW.js';
 
-// https :https://framerusercontent.com/modules/WcMbHBks2nbpih8cQpDP/AhqzfIsqvEqQBTf3A4Vp/Conic.js
+// https :https://framerusercontent.com/modules/gwopb529pvzz5XkTXQdN/KkKOttw1GZS7egTUfMRP/Conic.js
 import { jsx as _jsx, } from 'react/jsx-runtime';
 import { addPropertyControls, Color, ControlType, motion, } from 'unframer';
 var colorToValue = (c,) => Color(c,).toValue();
 function Conic(props,) {
   const { colors, radius, from, xPos, yPos, blur, onClick, onMouseEnter, onMouseLeave, onMouseDown, onMouseUp, transition, } = props;
-  const background = `conic-gradient(from ${from}deg at ${xPos}% ${yPos * 0.5 + 25}%, ${colors.map((c,) => colorToValue(c,)).join(',',)})`;
+  const colorsArr = colors.split(',',);
+  const background = `conic-gradient(from ${from}deg at ${xPos}% ${yPos * 0.5 + 25}%, ${
+    colorsArr.map((c,) => colorToValue(c,)).join(',',)
+  })`;
   let message = '';
   let isEmpty = false;
-  let fallBackColor = colors[0];
-  if (colors.length == 0) {
+  let fallBackColor = colorsArr[0];
+  if (colorsArr.length == 0) {
     message = '\u{1F44B} Please add 2+ colors.';
     fallBackColor = 'rgba(136, 85, 255, 0.1)';
     isEmpty = true;
-  } else if (colors.length == 1) {
+  } else if (colorsArr.length == 1) {
     isEmpty = true;
     fallBackColor = colors[0];
   } else {
@@ -37,14 +40,18 @@ function Conic(props,) {
     },),
   },);
 }
-Conic.defaultProps = { colors: ['cyan', 'magenta', 'yellow', 'cyan',], blur: 0, radius: 0, from: 0, xPos: 50, yPos: 50, };
+Conic.defaultProps = { colors: 'cyan, magenta, yellow, cyan', blur: 0, radius: 0, from: 0, xPos: 50, yPos: 50, };
 addPropertyControls(Conic, {
-  colors: {
-    type: ControlType.Array,
-    title: 'Colors',
-    control: { type: ControlType.Color, title: 'Color', },
-    defaultValue: Conic.defaultProps.colors,
-  },
+  // colors: {
+  //     type: ControlType.Array,
+  //     title: "Colors",
+  //     control: {
+  //         type: ControlType.Color,
+  //         title: "Color",
+  //     },
+  //     defaultValue: Conic.defaultProps.colors,
+  // },
+  colors: { type: ControlType.String, title: 'Colors', defaultValue: Conic.defaultProps.colors, },
   radius: { type: ControlType.Number, title: 'Radius', min: 0, max: 500, },
   blur: { type: ControlType.Number, title: 'Blur', min: 0, max: 100, },
   from: { type: ControlType.Number, title: 'Angle', unit: '\xB0', min: 0, max: 1080, displayStepper: true, step: 15, },

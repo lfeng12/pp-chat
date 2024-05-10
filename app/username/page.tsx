@@ -1,6 +1,7 @@
 import { createClient } from "@/utils/supabase/server";
 import '../../framer/styles.css'
 import Username from "../../framer/username"
+import Link from 'next/link'
 
 export default async function Page() {
   const canInitSupabaseClient = () => {
@@ -14,11 +15,13 @@ export default async function Page() {
     }
   };
 
+  
   const isSupabaseConnected = canInitSupabaseClient();
 
   return (
     <div className="flex-1 w-full flex flex-col gap-20 items-center">
         <Username />
+        <Link href="/chatMain">Dashboard</Link>
     </div>
   );
 }

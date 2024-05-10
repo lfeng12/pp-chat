@@ -11,21 +11,13 @@ export interface Props {
     height?: any
     layoutId?: string
     "tap"?: Function
-    "tap 2"?: Function
-    "tap 3"?: Function
-    "tap 4"?: Function
-    "tap 5"?: Function
-    "tap 6"?: Function
-    "tap 7"?: Function
-    "tap 8"?: Function
-    "tap 9"?: Function
 }
 
-const AccountFramerComponent = (props: Props) => any
+const LoginLandingFramerComponent = (props: Props) => any
 
 type VariantsMap = Partial<Record<UnframerBreakpoint, Props['variant']>> & { base: Props['variant'] }
 
-AccountFramerComponent.Responsive = (props: Omit<Props, 'variant'> & {variants: VariantsMap}) => any
+LoginLandingFramerComponent.Responsive = (props: Omit<Props, 'variant'> & {variants: VariantsMap}) => any
 
-export default AccountFramerComponent
+export default LoginLandingFramerComponent
 

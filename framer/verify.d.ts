@@ -10,16 +10,14 @@ export interface Props {
     width?: any
     height?: any
     layoutId?: string
-    "tap"?: Function
-    "tap 2"?: Function
-    "tap 3"?: Function
+
 }
 
-const FinishFramerComponent = (props: Props) => any
+const VerifyFramerComponent = (props: Props) => any
 
 type VariantsMap = Partial<Record<UnframerBreakpoint, Props['variant']>> & { base: Props['variant'] }
 
-FinishFramerComponent.Responsive = (props: Omit<Props, 'variant'> & {variants: VariantsMap}) => any
+VerifyFramerComponent.Responsive = (props: Omit<Props, 'variant'> & {variants: VariantsMap}) => any
 
-export default FinishFramerComponent
+export default VerifyFramerComponent
 

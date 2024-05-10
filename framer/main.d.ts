@@ -13,7 +13,6 @@ export interface Props {
     "tap"?: Function
     "tap 2"?: Function
     "tap 3"?: Function
-    "tap 4"?: Function
 }
 
 const MainFramerComponent = (props: Props) => any

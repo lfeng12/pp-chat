@@ -3,11 +3,10 @@
 import { Input, } from './chunk-5IVOZXBX.js';
 import './chunk-JJFCSOIW.js';
 import { className, css, fonts, } from './chunk-XH7W2HFD.js';
-import { className as className2, css as css2, fonts as fonts2, } from './chunk-DCG3Q45P.js';
-import { Icon, } from './chunk-NTBY4HVU.js';
+import { className as className2, css as css2, fonts as fonts2, Icon, } from './chunk-6MAF3TKJ.js';
 import './chunk-ZBBVTMRC.js';
 
-// https :https://framerusercontent.com/modules/kROFLsGoGVuLDATId30l/Aim5qeuCwcKVS66zfipN/xxuyWzQ4Q.js
+// https :https://framerusercontent.com/modules/da5XuyEVomDI61QhHXcM/trFbLwKE6mKuLttFR4gJ/xOzt12XxL.js
 import { jsx as _jsx, jsxs as _jsxs, } from 'react/jsx-runtime';
 import {
   addFonts,
@@ -17,7 +16,6 @@ import {
   cx,
   getFonts,
   getFontsFromSharedStyle,
-  Image,
   RichText,
   useActiveVariantCallback,
   useComponentViewport,
@@ -29,9 +27,9 @@ import { LayoutGroup, motion, MotionConfigContext, } from 'unframer';
 import * as React from 'react';
 var InputFonts = getFonts(Input,);
 var IconoirFonts = getFonts(Icon,);
-var cycleOrder = ['ZCT6q67ey',];
-var serializationHash = 'framer-lKjQG';
-var variantClassNames = { ZCT6q67ey: 'framer-v-ehjksj', };
+var cycleOrder = ['UZQlH5lcr',];
+var serializationHash = 'framer-5HqXD';
+var variantClassNames = { UZQlH5lcr: 'framer-v-1inz45h', };
 var transition1 = { damping: 60, delay: 0, mass: 1, stiffness: 500, type: 'spring', };
 var transformTemplate1 = (_, t,) => `translate(-50%, -50%) ${t}`;
 var Transition = ({ value, children, },) => {
@@ -44,33 +42,33 @@ var Variants = motion(React.Fragment,);
 var getProps = ({ height, id, tap, tap2, width, ...props },) => {
   return {
     ...props,
-    Omwu8OCKq: tap2 !== null && tap2 !== void 0 ? tap2 : props.Omwu8OCKq,
-    xYiegg2W2: tap !== null && tap !== void 0 ? tap : props.xYiegg2W2,
+    JWmaktf2y: tap !== null && tap !== void 0 ? tap : props.JWmaktf2y,
+    KIDjK9RyW: tap2 !== null && tap2 !== void 0 ? tap2 : props.KIDjK9RyW,
   };
 };
 var createLayoutDependency = (props, variants,) => variants.join('-',) + props.layoutDependency;
 var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
   const { activeLocale, setLocale, } = useLocaleInfo();
-  const { style, className: className3, layoutId, variant, xYiegg2W2, Omwu8OCKq, ...restProps } = getProps(props,);
+  const { style, className: className3, layoutId, variant, JWmaktf2y, KIDjK9RyW, ...restProps } = getProps(props,);
   const { baseVariant, classNames, gestureVariant, setGestureState, setVariant, variants, } = useVariantState({
     cycleOrder,
-    defaultVariant: 'ZCT6q67ey',
+    defaultVariant: 'UZQlH5lcr',
     variant,
     variantClassNames,
   },);
   const layoutDependency = createLayoutDependency(props, variants,);
   const { activeVariantCallback, delay, } = useActiveVariantCallback(baseVariant,);
-  const onTapgx5si9 = activeVariantCallback(async (...args) => {
-    if (xYiegg2W2) {
-      const res = await xYiegg2W2(...args,);
+  const onTapu4cygo = activeVariantCallback(async (...args) => {
+    if (JWmaktf2y) {
+      const res = await JWmaktf2y(...args,);
       if (res === false) {
         return false;
       }
     }
   },);
-  const onClickiwt57h = activeVariantCallback(async (...args) => {
-    if (Omwu8OCKq) {
-      const res = await Omwu8OCKq(...args,);
+  const onClick14ih6ae = activeVariantCallback(async (...args) => {
+    if (KIDjK9RyW) {
+      const res = await KIDjK9RyW(...args,);
       if (res === false) {
         return false;
       }
@@ -78,7 +76,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
   },);
   const ref1 = React.useRef(null,);
   const defaultLayoutId = React.useId();
-  const sharedStyleClassNames = [className2, className,];
+  const sharedStyleClassNames = [className, className2,];
   const componentViewport = useComponentViewport();
   return /* @__PURE__ */ _jsx(LayoutGroup, {
     id: layoutId !== null && layoutId !== void 0 ? layoutId : defaultLayoutId,
@@ -89,10 +87,10 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
         value: transition1,
         children: /* @__PURE__ */ _jsxs(motion.div, {
           ...restProps,
-          className: cx(serializationHash, ...sharedStyleClassNames, 'framer-ehjksj', className3, classNames,),
+          className: cx(serializationHash, ...sharedStyleClassNames, 'framer-1inz45h', className3, classNames,),
           'data-framer-name': 'Variant 1',
           layoutDependency,
-          layoutId: 'ZCT6q67ey',
+          layoutId: 'UZQlH5lcr',
           onHoverEnd: () => setGestureState({ isHovered: false, },),
           onHoverStart: () => setGestureState({ isHovered: true, },),
           onTap: () => setGestureState({ isPressed: false, },),
@@ -101,46 +99,68 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
           ref: ref !== null && ref !== void 0 ? ref : ref1,
           style: { backgroundColor: 'rgb(255, 255, 255)', ...style, },
           children: [
-            /* @__PURE__ */ _jsx(Image, {
-              background: {
-                alt: '',
-                fit: 'fill',
-                intrinsicHeight: 2250,
-                intrinsicWidth: 1100,
-                pixelHeight: 4500,
-                pixelWidth: 2200,
-                sizes: (componentViewport === null || componentViewport === void 0 ? void 0 : componentViewport.width) || '100vw',
-                src: 'https://framerusercontent.com/images/1uEO3pFZ5OW3cGbOe0iL7EkeHN0.png?scale-down-to=4096',
-                srcSet:
-                  'https://framerusercontent.com/images/1uEO3pFZ5OW3cGbOe0iL7EkeHN0.png?scale-down-to=2048 1001w,https://framerusercontent.com/images/1uEO3pFZ5OW3cGbOe0iL7EkeHN0.png?scale-down-to=4096 2002w,https://framerusercontent.com/images/1uEO3pFZ5OW3cGbOe0iL7EkeHN0.png 2200w',
-              },
-              className: 'framer-10rx7wu',
-              'data-framer-name': 'iphone14pro',
-              layoutDependency,
-              layoutId: 'xbf6IN4op',
-            },),
             /* @__PURE__ */ _jsx(RichText, {
               __fromCanvasComponent: true,
               children: /* @__PURE__ */ _jsx(React.Fragment, {
-                children: /* @__PURE__ */ _jsx(motion.h1, {
-                  className: 'framer-styles-preset-ame1jg',
-                  'data-styles-preset': 'e81t2mHNr',
-                  children: 'Create your username',
+                children: /* @__PURE__ */ _jsx(motion.h6, {
+                  className: 'framer-styles-preset-136pxet',
+                  'data-styles-preset': 'A_3jD2ulG',
+                  children: 'Terms & Agreement',
                 },),
               },),
-              className: 'framer-1oyc885',
+              className: 'framer-1iszamt',
               fonts: ['Inter',],
               layoutDependency,
-              layoutId: 'DLmZEAKwv',
+              layoutId: 'cx5HeFc_O',
               style: { '--framer-link-text-color': 'rgb(0, 153, 255)', '--framer-link-text-decoration': 'underline', },
               verticalAlignment: 'top',
               withExternalLayout: true,
             },),
+            /* @__PURE__ */ _jsx(motion.button, {
+              className: 'framer-12bjoh',
+              'data-framer-name': 'Button',
+              'data-highlight': true,
+              'data-reset': 'button',
+              layoutDependency,
+              layoutId: 'Dg_tCsR4O',
+              onTap: onTapu4cygo,
+              style: {
+                backgroundColor: 'rgb(255, 121, 173)',
+                borderBottomLeftRadius: 30,
+                borderBottomRightRadius: 30,
+                borderTopLeftRadius: 30,
+                borderTopRightRadius: 30,
+                boxShadow: '2px 2px 2px 0px rgba(0,0,0,0.25)',
+              },
+              children: /* @__PURE__ */ _jsx(RichText, {
+                __fromCanvasComponent: true,
+                children: /* @__PURE__ */ _jsx(React.Fragment, {
+                  children: /* @__PURE__ */ _jsx(motion.p, {
+                    style: {
+                      '--font-selector': 'R0Y7RE0gU2Fucy01MDA=',
+                      '--framer-font-family': '"DM Sans", "DM Sans Placeholder", sans-serif',
+                      '--framer-font-weight': '500',
+                      '--framer-text-alignment': 'center',
+                      '--framer-text-color': 'var(--extracted-r6o4lv, rgb(255, 255, 255))',
+                    },
+                    children: 'Next',
+                  },),
+                },),
+                className: 'framer-1nq2n2f',
+                fonts: ['GF;DM Sans-500',],
+                layoutDependency,
+                layoutId: 'gkcEPF5PX',
+                style: { '--extracted-r6o4lv': 'rgb(255, 255, 255)', },
+                transformTemplate: transformTemplate1,
+                verticalAlignment: 'top',
+                withExternalLayout: true,
+              },),
+            },),
             /* @__PURE__ */ _jsx(ComponentViewportProvider, {
               children: /* @__PURE__ */ _jsx(motion.div, {
-                className: 'framer-1yek2jd-container',
+                className: 'framer-1ssv22r-container',
                 layoutDependency,
-                layoutId: 'knHprhRlk-container',
+                layoutId: 'nrcmPjbQE-container',
                 children: /* @__PURE__ */ _jsx(Input, {
                   backgroundColor: 'rgb(255, 255, 255)',
                   border: 'rgb(0, 0, 0)',
@@ -158,11 +178,11 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
                   fontSize: 16,
                   fontWeight: 400,
                   height: '100%',
-                  id: 'knHprhRlk',
+                  id: 'nrcmPjbQE',
                   isMixedBorderRadius: false,
                   isRTL: false,
                   keyboard: '',
-                  layoutId: 'knHprhRlk',
+                  layoutId: 'nrcmPjbQE',
                   lineHeight: 1.4,
                   maxLength: 10,
                   multiLine: false,
@@ -186,82 +206,42 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
                 },),
               },),
             },),
-            /* @__PURE__ */ _jsx(motion.button, {
-              className: 'framer-14x50dr',
-              'data-framer-name': 'Button',
-              'data-highlight': true,
-              'data-reset': 'button',
-              layoutDependency,
-              layoutId: 'vxFvpNB8N',
-              onTap: onTapgx5si9,
-              style: {
-                backgroundColor: 'rgb(255, 121, 173)',
-                borderBottomLeftRadius: 30,
-                borderBottomRightRadius: 30,
-                borderTopLeftRadius: 30,
-                borderTopRightRadius: 30,
-                boxShadow: '2px 2px 2px 0px rgba(0,0,0,0.25)',
-              },
-              children: /* @__PURE__ */ _jsx(RichText, {
-                __fromCanvasComponent: true,
-                children: /* @__PURE__ */ _jsx(React.Fragment, {
-                  children: /* @__PURE__ */ _jsx(motion.p, {
-                    style: {
-                      '--font-selector': 'R0Y7RE0gU2Fucy01MDA=',
-                      '--framer-font-family': '"DM Sans", sans-serif',
-                      '--framer-font-weight': '500',
-                      '--framer-text-alignment': 'center',
-                      '--framer-text-color': 'var(--extracted-r6o4lv, rgb(255, 255, 255))',
-                    },
-                    children: 'Next',
-                  },),
+            /* @__PURE__ */ _jsx(RichText, {
+              __fromCanvasComponent: true,
+              children: /* @__PURE__ */ _jsx(React.Fragment, {
+                children: /* @__PURE__ */ _jsx(motion.h1, {
+                  className: 'framer-styles-preset-ame1jg',
+                  'data-styles-preset': 'e81t2mHNr',
+                  children: 'Create your username',
                 },),
-                className: 'framer-1bsvj9x',
-                fonts: ['GF;DM Sans-500',],
-                layoutDependency,
-                layoutId: 'pJLAaX9PD',
-                style: { '--extracted-r6o4lv': 'rgb(255, 255, 255)', },
-                transformTemplate: transformTemplate1,
-                verticalAlignment: 'top',
-                withExternalLayout: true,
               },),
+              className: 'framer-5febkt',
+              fonts: ['Inter',],
+              layoutDependency,
+              layoutId: 'lBQUPxDIt',
+              style: { '--framer-link-text-color': 'rgb(0, 153, 255)', '--framer-link-text-decoration': 'underline', },
+              verticalAlignment: 'top',
+              withExternalLayout: true,
             },),
             /* @__PURE__ */ _jsx(ComponentViewportProvider, {
               children: /* @__PURE__ */ _jsx(motion.div, {
-                className: 'framer-17izh2a-container',
+                className: 'framer-14pwisr-container',
                 layoutDependency,
-                layoutId: 'zdwhdB1R6-container',
+                layoutId: 'SxdFvjWNu-container',
                 children: /* @__PURE__ */ _jsx(Icon, {
                   color: 'rgb(0, 0, 0)',
                   height: '100%',
                   iconSearch: 'cancel',
                   iconSelection: 'ArrowLeft',
-                  id: 'zdwhdB1R6',
-                  layoutId: 'zdwhdB1R6',
+                  id: 'SxdFvjWNu',
+                  layoutId: 'SxdFvjWNu',
                   mirrored: false,
-                  onClick: onClickiwt57h,
+                  onClick: onClick14ih6ae,
                   selectByList: false,
                   style: { height: '100%', width: '100%', },
                   width: '100%',
                 },),
               },),
-            },),
-            /* @__PURE__ */ _jsx(RichText, {
-              __fromCanvasComponent: true,
-              children: /* @__PURE__ */ _jsx(React.Fragment, {
-                children: /* @__PURE__ */ _jsx(motion.h6, {
-                  className: 'framer-styles-preset-136pxet',
-                  'data-styles-preset': 'A_3jD2ulG',
-                  children: 'Terms & Agreement',
-                },),
-              },),
-              className: 'framer-6vjr44',
-              fonts: ['Inter',],
-              layoutDependency,
-              layoutId: 'PrkqSm92c',
-              style: { '--framer-link-text-color': 'rgb(0, 153, 255)', '--framer-link-text-decoration': 'underline', },
-              verticalAlignment: 'top',
-              withExternalLayout: true,
             },),
           ],
         },),
@@ -271,28 +251,27 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
 },);
 var css3 = [
   '@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }',
-  '.framer-lKjQG.framer-3jvij6, .framer-lKjQG .framer-3jvij6 { display: block; }',
-  '.framer-lKjQG.framer-ehjksj { height: 790px; overflow: hidden; position: relative; width: 386px; }',
-  '.framer-lKjQG .framer-10rx7wu { aspect-ratio: 0.4888888888888889 / 1; flex: none; height: var(--framer-aspect-ratio-supported, 790px); left: 0px; overflow: visible; position: absolute; right: 0px; top: 0px; }',
-  '.framer-lKjQG .framer-1oyc885 { flex: none; height: 18px; left: 43px; position: absolute; top: 115px; white-space: pre-wrap; width: 209px; word-break: break-word; word-wrap: break-word; }',
-  '.framer-lKjQG .framer-1yek2jd-container { flex: none; height: 42px; left: calc(49.74093264248707% - 299px / 2); position: absolute; top: 161px; width: 299px; }',
-  '.framer-lKjQG .framer-14x50dr { align-content: center; align-items: center; cursor: pointer; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: 42px; justify-content: center; left: calc(49.74093264248707% - 299px / 2); padding: 10px 20px 10px 20px; position: absolute; top: 231px; width: 299px; }',
-  '.framer-lKjQG .framer-1bsvj9x { flex: none; height: auto; left: 50%; overflow: visible; position: absolute; top: 50%; white-space: pre; width: auto; z-index: 1; }',
-  '.framer-lKjQG .framer-17izh2a-container { flex: none; height: 44px; left: 30px; position: absolute; top: 58px; width: 44px; }',
-  '.framer-lKjQG .framer-6vjr44 { bottom: 32px; flex: none; height: 18px; left: calc(49.48186528497411% - 157px / 2); position: absolute; white-space: pre-wrap; width: 157px; word-break: break-word; word-wrap: break-word; }',
-  '@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) { .framer-lKjQG .framer-14x50dr { gap: 0px; } .framer-lKjQG .framer-14x50dr > * { margin: 0px; margin-left: calc(8px / 2); margin-right: calc(8px / 2); } .framer-lKjQG .framer-14x50dr > :first-child { margin-left: 0px; } .framer-lKjQG .framer-14x50dr > :last-child { margin-right: 0px; } }',
-  ...css2,
+  '.framer-5HqXD.framer-zainyk, .framer-5HqXD .framer-zainyk { display: block; }',
+  '.framer-5HqXD.framer-1inz45h { height: 844px; overflow: hidden; position: relative; width: 390px; }',
+  '.framer-5HqXD .framer-1iszamt { bottom: 59px; flex: none; height: 18px; left: calc(48.97435897435899% - 157px / 2); position: absolute; white-space: pre-wrap; width: 157px; word-break: break-word; word-wrap: break-word; }',
+  '.framer-5HqXD .framer-12bjoh { align-content: center; align-items: center; cursor: pointer; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: 42px; justify-content: center; left: calc(49.743589743589766% - 299px / 2); padding: 10px 20px 10px 20px; position: absolute; top: 233px; width: 299px; }',
+  '.framer-5HqXD .framer-1nq2n2f { flex: none; height: auto; left: 50%; overflow: visible; position: absolute; top: 50%; white-space: pre; width: auto; z-index: 1; }',
+  '.framer-5HqXD .framer-1ssv22r-container { flex: none; height: 42px; left: calc(49.743589743589766% - 299px / 2); position: absolute; top: 163px; width: 299px; }',
+  '.framer-5HqXD .framer-5febkt { flex: none; height: 18px; left: calc(49.743589743589766% - 209px / 2); position: absolute; top: 110px; white-space: pre-wrap; width: 209px; word-break: break-word; word-wrap: break-word; }',
+  '.framer-5HqXD .framer-14pwisr-container { flex: none; height: 44px; left: 35px; position: absolute; top: 27px; width: 44px; }',
+  '@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) { .framer-5HqXD .framer-12bjoh { gap: 0px; } .framer-5HqXD .framer-12bjoh > * { margin: 0px; margin-left: calc(8px / 2); margin-right: calc(8px / 2); } .framer-5HqXD .framer-12bjoh > :first-child { margin-left: 0px; } .framer-5HqXD .framer-12bjoh > :last-child { margin-right: 0px; } }',
   ...css,
+  ...css2,
 ];
-var FramerxxuyWzQ4Q = withCSS(Component, css3, 'framer-lKjQG',);
-var stdin_default = FramerxxuyWzQ4Q;
-FramerxxuyWzQ4Q.displayName = 'username';
-FramerxxuyWzQ4Q.defaultProps = { height: 790, width: 386, };
-addPropertyControls(FramerxxuyWzQ4Q, {
-  xYiegg2W2: { title: 'Tap', type: ControlType.EventHandler, },
-  Omwu8OCKq: { title: 'Tap 2', type: ControlType.EventHandler, },
+var FramerxOzt12XxL = withCSS(Component, css3, 'framer-5HqXD',);
+var stdin_default = FramerxOzt12XxL;
+FramerxOzt12XxL.displayName = 'V2 - username';
+FramerxOzt12XxL.defaultProps = { height: 844, width: 390, };
+addPropertyControls(FramerxOzt12XxL, {
+  JWmaktf2y: { title: 'Tap', type: ControlType.EventHandler, },
+  KIDjK9RyW: { title: 'Tap 2', type: ControlType.EventHandler, },
 },);
-addFonts(FramerxxuyWzQ4Q, [
+addFonts(FramerxOzt12XxL, [
   {
     explicitInter: true,
     fonts: [{
@@ -355,8 +334,8 @@ addFonts(FramerxxuyWzQ4Q, [
   },
   ...InputFonts,
   ...IconoirFonts,
-  ...getFontsFromSharedStyle(fonts2,),
   ...getFontsFromSharedStyle(fonts,),
+  ...getFontsFromSharedStyle(fonts2,),
 ], { supportsExplicitInterCodegen: true, },);
 
 // virtual:username

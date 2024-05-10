@@ -10,14 +10,14 @@ export interface Props {
     width?: any
     height?: any
     layoutId?: string
-    "tap"?: Function
+
 }
 
-const ByeFramerComponent = (props: Props) => any
+const NoPageFramerComponent = (props: Props) => any
 
 type VariantsMap = Partial<Record<UnframerBreakpoint, Props['variant']>> & { base: Props['variant'] }
 
-ByeFramerComponent.Responsive = (props: Omit<Props, 'variant'> & {variants: VariantsMap}) => any
+NoPageFramerComponent.Responsive = (props: Omit<Props, 'variant'> & {variants: VariantsMap}) => any
 
-export default ByeFramerComponent
+export default NoPageFramerComponent
 

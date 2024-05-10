@@ -734,7 +734,7 @@ NavigationContainer
 [data-hide-scrollbars="true"]::-webkit-scrollbar-thumb { background: transparent; }
 [data-framer-component-type="Form"] input { padding: var(--input-padding); }
 
-/* used by account.js, chat1.js, emailLogin.js, finish.js, main.js, routine.js, upload.js, username.js, verify1.js */
+/* used by chatMain.js, emailLogin.js, main.js, routine.js, upload.js, username.js, verify.js */
 
 @font-face {
     font-family: 'Inter'; 
@@ -792,7 +792,7 @@ NavigationContainer
     unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
-/* used by emailLogin.js, username.js, verify1.js */
+/* used by emailLogin.js, username.js, verify.js */
 
 @font-face {
     font-family: 'DM Sans'; 
@@ -801,7 +801,7 @@ NavigationContainer
     font-weight: 200;
 }
 
-/* used by chat1.js, emailLogin.js, finish.js, main.js, routine.js, upload.js, username.js, verify1.js */
+/* used by emailLogin.js, main.js, routine.js, upload.js, username.js, verify.js */
 
 @font-face {
     font-family: 'DM Sans'; 
@@ -810,7 +810,7 @@ NavigationContainer
     font-weight: 700;
 }
 
-/* used by landing.js */
+/* used by loginLanding.js */
 
 @font-face {
     font-family: 'DM Sans'; 
@@ -819,7 +819,7 @@ NavigationContainer
     font-weight: 200;
 }
 
-/* used by chat1.js, emailLogin.js, main.js */
+/* used by emailLogin.js, main.js */
 
 @font-face {
     font-family: 'DM Sans'; 
@@ -828,7 +828,7 @@ NavigationContainer
     font-weight: 300;
 }
 
-/* used by account.js, emailLogin.js, finish.js, landing.js, upload.js, username.js, verify1.js */
+/* used by loginLanding.js, upload.js, username.js, verify.js */
 
 @font-face {
     font-family: 'DM Sans'; 
@@ -837,16 +837,7 @@ NavigationContainer
     font-weight: 500;
 }
 
-/* used by chat1.js */
-
-@font-face {
-    font-family: 'DM Sans'; 
-    src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhS2f3ZGMZpg.woff2);
-    font-style: normal;
-    font-weight: 400;
-}
-
-/* used by account.js, emailLogin.js */
+/* used by emailLogin.js */
 
 @font-face {
     font-family: 'DM Sans'; 
@@ -855,7 +846,7 @@ NavigationContainer
     font-weight: 700;
 }
 
-/* used by bye.js, landing.js */
+/* used by loginLanding.js, noPage.js */
 
 @font-face {
     font-family: 'Erica One'; 

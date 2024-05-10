@@ -1,5 +1,5 @@
 /* eslint-disable */
-// https :https://framerusercontent.com/modules/qCV470OeJRk23S9WBZau/ZDUUEpUpMepdT70qse9F/Clock.js
+// https :https://framerusercontent.com/modules/qCV470OeJRk23S9WBZau/Qu1BH7PBEOaR7yVW0Iw4/Clock.js
 import { jsxs as _jsxs, } from 'react/jsx-runtime';
 import { addPropertyControls, ControlType, } from 'unframer';
 import { useEffect, useState, } from 'react';
@@ -25,8 +25,8 @@ function Clock(props,) {
   const seconds = '00';
   const ampm = '';
   if (props.seconds) {
-    const seconds1 = currentTime.getSeconds().toString().padStart(2, '0',);
-    text = `${minutes}:${seconds1}${ampm}`;
+    const seconds2 = currentTime.getSeconds().toString().padStart(2, '0',);
+    text = `${minutes}:${seconds2}${ampm}`;
   } else {
     text = `${minutes}${ampm}`;
   }
@@ -38,7 +38,7 @@ function Clock(props,) {
     text += ' ' + timeZoneAbbreviation;
   }
   return /* @__PURE__ */ _jsxs('p', {
-    style: { color: props.color, userSelect: props.textSelect ? 'auto' : 'none', margin: 0, ...props.font, },
+    style: { color: props.color, userSelect: props.textSelect ? 'auto' : 'none', margin: 0, ...props.font, fontSize: 24, },
     children: [props.prefix, text, props.suffix,],
   },);
 }

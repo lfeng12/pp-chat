@@ -1,11 +1,11 @@
 /* eslint-disable */
 'use client';
-import { Clock, } from './chunk-YQS4D325.js';
-import { className, css, fonts, } from './chunk-DCG3Q45P.js';
-import { Icon, } from './chunk-NTBY4HVU.js';
+import { stdin_default, } from './chunk-GYUMUFYO.js';
+import './chunk-EIZOZDEQ.js';
+import { className, css, fonts, Icon, } from './chunk-6MAF3TKJ.js';
 import './chunk-ZBBVTMRC.js';
 
-// https :https://framerusercontent.com/modules/SQ1u2BF67GPXAUBSmedF/bLNNGeh85ao7o4hn2h2C/EBpO5n2sI.js
+// https :https://framerusercontent.com/modules/bwrMrjs7TbMNxcIsPGOS/t744pMynBsQp8leCtLm9/w6TVVpUFM.js
 import { jsx as _jsx, jsxs as _jsxs, } from 'react/jsx-runtime';
 import {
   addFonts,
@@ -26,11 +26,11 @@ import {
 } from 'unframer';
 import { LayoutGroup, motion, MotionConfigContext, } from 'unframer';
 import * as React from 'react';
-var ClockFonts = getFonts(Clock,);
+var TopBarFonts = getFonts(stdin_default,);
 var IconoirFonts = getFonts(Icon,);
-var cycleOrder = ['dszax79Ew',];
-var serializationHash = 'framer-6Ksrg';
-var variantClassNames = { dszax79Ew: 'framer-v-sh5ysn', };
+var cycleOrder = ['kWapH6tCu',];
+var serializationHash = 'framer-dCF60';
+var variantClassNames = { kWapH6tCu: 'framer-v-tu9yvp', };
 var transition1 = { damping: 60, delay: 0, mass: 1, stiffness: 500, type: 'spring', };
 var transformTemplate1 = (_, t,) => `translateX(-50%) ${t}`;
 var transformTemplate2 = (_, t,) => `translate(-50%, -50%) ${t}`;
@@ -41,45 +41,36 @@ var Transition = ({ value, children, },) => {
   return /* @__PURE__ */ _jsx(MotionConfigContext.Provider, { value: contextValue, children, },);
 };
 var Variants = motion(React.Fragment,);
-var getProps = ({ height, id, tap, tap2, tap3, width, ...props },) => {
+var getProps = ({ height, id, tap, tap2, width, ...props },) => {
   return {
     ...props,
-    dXvtPIGB7: tap3 !== null && tap3 !== void 0 ? tap3 : props.dXvtPIGB7,
-    PAVPg5q6C: tap2 !== null && tap2 !== void 0 ? tap2 : props.PAVPg5q6C,
-    QbxzG0jC6: tap !== null && tap !== void 0 ? tap : props.QbxzG0jC6,
+    nYq9gKXt0: tap2 !== null && tap2 !== void 0 ? tap2 : props.nYq9gKXt0,
+    p1A8QFNA3: tap !== null && tap !== void 0 ? tap : props.p1A8QFNA3,
   };
 };
 var createLayoutDependency = (props, variants,) => variants.join('-',) + props.layoutDependency;
 var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
   const { activeLocale, setLocale, } = useLocaleInfo();
-  const { style, className: className2, layoutId, variant, QbxzG0jC6, PAVPg5q6C, dXvtPIGB7, ...restProps } = getProps(props,);
+  const { style, className: className2, layoutId, variant, p1A8QFNA3, nYq9gKXt0, ...restProps } = getProps(props,);
   const { baseVariant, classNames, gestureVariant, setGestureState, setVariant, variants, } = useVariantState({
     cycleOrder,
-    defaultVariant: 'dszax79Ew',
+    defaultVariant: 'kWapH6tCu',
     variant,
     variantClassNames,
   },);
   const layoutDependency = createLayoutDependency(props, variants,);
   const { activeVariantCallback, delay, } = useActiveVariantCallback(baseVariant,);
-  const onTapqe34ml = activeVariantCallback(async (...args) => {
-    if (QbxzG0jC6) {
-      const res = await QbxzG0jC6(...args,);
+  const onTap3bh1l4 = activeVariantCallback(async (...args) => {
+    if (p1A8QFNA3) {
+      const res = await p1A8QFNA3(...args,);
       if (res === false) {
         return false;
       }
     }
   },);
-  const onTapsv77jm = activeVariantCallback(async (...args) => {
-    if (PAVPg5q6C) {
-      const res = await PAVPg5q6C(...args,);
-      if (res === false) {
-        return false;
-      }
-    }
-  },);
-  const onClickf78vvf = activeVariantCallback(async (...args) => {
-    if (dXvtPIGB7) {
-      const res = await dXvtPIGB7(...args,);
+  const onTapx0rrsn = activeVariantCallback(async (...args) => {
+    if (nYq9gKXt0) {
+      const res = await nYq9gKXt0(...args,);
       if (res === false) {
         return false;
       }
@@ -98,10 +89,10 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
         value: transition1,
         children: /* @__PURE__ */ _jsxs(motion.div, {
           ...restProps,
-          className: cx(serializationHash, ...sharedStyleClassNames, 'framer-sh5ysn', className2, classNames,),
+          className: cx(serializationHash, ...sharedStyleClassNames, 'framer-tu9yvp', className2, classNames,),
           'data-framer-name': 'Variant 1',
           layoutDependency,
-          layoutId: 'dszax79Ew',
+          layoutId: 'kWapH6tCu',
           onHoverEnd: () => setGestureState({ isHovered: false, },),
           onHoverStart: () => setGestureState({ isHovered: true, },),
           onTap: () => setGestureState({ isPressed: false, },),
@@ -110,107 +101,40 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
           ref: ref !== null && ref !== void 0 ? ref : ref1,
           style: { backgroundColor: 'rgb(255, 255, 255)', ...style, },
           children: [
-            /* @__PURE__ */ _jsxs(Image, {
+            /* @__PURE__ */ _jsx(Image, {
               background: {
                 alt: '',
                 fit: 'fill',
-                intrinsicHeight: 2250,
-                intrinsicWidth: 1100,
-                pixelHeight: 4500,
-                pixelWidth: 2200,
-                sizes: (componentViewport === null || componentViewport === void 0 ? void 0 : componentViewport.width) || '100vw',
-                src: 'https://framerusercontent.com/images/1uEO3pFZ5OW3cGbOe0iL7EkeHN0.png?scale-down-to=4096',
+                intrinsicHeight: 2016,
+                intrinsicWidth: 1512,
+                pixelHeight: 4032,
+                pixelWidth: 3024,
+                sizes: '329px',
+                src: 'https://framerusercontent.com/images/VAXKMsnGkP8nnQVoiWzSS3bDc.jpg?scale-down-to=2048',
                 srcSet:
-                  'https://framerusercontent.com/images/1uEO3pFZ5OW3cGbOe0iL7EkeHN0.png?scale-down-to=2048 1001w,https://framerusercontent.com/images/1uEO3pFZ5OW3cGbOe0iL7EkeHN0.png?scale-down-to=4096 2002w,https://framerusercontent.com/images/1uEO3pFZ5OW3cGbOe0iL7EkeHN0.png 2200w',
+                  'https://framerusercontent.com/images/VAXKMsnGkP8nnQVoiWzSS3bDc.jpg?scale-down-to=1024 768w,https://framerusercontent.com/images/VAXKMsnGkP8nnQVoiWzSS3bDc.jpg?scale-down-to=2048 1536w,https://framerusercontent.com/images/VAXKMsnGkP8nnQVoiWzSS3bDc.jpg 3024w',
               },
-              className: 'framer-1c996ay',
-              'data-framer-name': 'iphone14pro',
+              className: 'framer-3t8asx',
+              'data-framer-name': 'exiting',
               layoutDependency,
-              layoutId: 'VXh92Snoc',
-              children: [
-                /* @__PURE__ */ _jsx(ComponentViewportProvider, {
-                  children: /* @__PURE__ */ _jsx(motion.div, {
-                    className: 'framer-1akt53l-container',
-                    layoutDependency,
-                    layoutId: 'bUqYObKAo-container',
-                    transformTemplate: transformTemplate1,
-                    children: /* @__PURE__ */ _jsx(Clock, {
-                      ampmCase: 'uppercase',
-                      color: 'rgb(255, 255, 255)',
-                      font: {
-                        fontFamily: '"Inter", sans-serif',
-                        fontSize: '22px',
-                        fontStyle: 'normal',
-                        letterSpacing: '0em',
-                        lineHeight: '1em',
-                      },
-                      height: '100%',
-                      id: 'bUqYObKAo',
-                      is12hour: true,
-                      layoutId: 'bUqYObKAo',
-                      prefix: '',
-                      seconds: true,
-                      style: { width: '100%', },
-                      suffix: '',
-                      textSelect: true,
-                      timeZone: false,
-                      width: '100%',
-                    },),
-                  },),
-                },),
-                /* @__PURE__ */ _jsx(motion.div, {
-                  className: 'framer-1oh51il',
-                  'data-highlight': true,
-                  layoutDependency,
-                  layoutId: 'PflKhOEnj',
-                  onTap: onTapqe34ml,
-                },),
-                /* @__PURE__ */ _jsx(Image, {
-                  background: {
-                    alt: '',
-                    fit: 'fill',
-                    intrinsicHeight: 2016,
-                    intrinsicWidth: 1512,
-                    pixelHeight: 4032,
-                    pixelWidth: 3024,
-                    sizes: '307px',
-                    src: 'https://framerusercontent.com/images/VAXKMsnGkP8nnQVoiWzSS3bDc.jpg?scale-down-to=2048',
-                    srcSet:
-                      'https://framerusercontent.com/images/VAXKMsnGkP8nnQVoiWzSS3bDc.jpg?scale-down-to=1024 768w,https://framerusercontent.com/images/VAXKMsnGkP8nnQVoiWzSS3bDc.jpg?scale-down-to=2048 1536w,https://framerusercontent.com/images/VAXKMsnGkP8nnQVoiWzSS3bDc.jpg 3024w',
-                  },
-                  className: 'framer-1s4u4xr',
-                  'data-framer-name': 'exiting',
-                  layoutDependency,
-                  layoutId: 'bZ1BwCOkV',
-                  transformTemplate: transformTemplate2,
-                },),
-              ],
+              layoutId: 'kQOWMziT_',
+              transformTemplate: transformTemplate1,
             },),
-            /* @__PURE__ */ _jsx(RichText, {
-              __fromCanvasComponent: true,
-              children: /* @__PURE__ */ _jsx(React.Fragment, {
-                children: /* @__PURE__ */ _jsx(motion.h1, {
-                  className: 'framer-styles-preset-ame1jg',
-                  'data-styles-preset': 'e81t2mHNr',
-                  children: 'Prove it:',
-                },),
-              },),
-              className: 'framer-rzekld',
-              fonts: ['Inter',],
+            /* @__PURE__ */ _jsx(motion.div, {
+              className: 'framer-1b4fzpx',
+              'data-highlight': true,
               layoutDependency,
-              layoutId: 'yLg1OIhyU',
-              style: { '--framer-link-text-color': 'rgb(0, 153, 255)', '--framer-link-text-decoration': 'underline', },
-              verticalAlignment: 'top',
-              withExternalLayout: true,
+              layoutId: 'NHLr4pseb',
+              onTap: onTap3bh1l4,
             },),
             /* @__PURE__ */ _jsx(motion.button, {
-              className: 'framer-1s46p5e',
+              className: 'framer-ydocx8',
               'data-framer-name': 'Button',
               'data-highlight': true,
               'data-reset': 'button',
               layoutDependency,
-              layoutId: 'Ate7njOH4',
-              onTap: onTapsv77jm,
+              layoutId: 'NaUochdM0',
+              onTap: onTapx0rrsn,
               style: {
                 backgroundColor: 'rgb(255, 121, 173)',
                 borderBottomLeftRadius: 30,
@@ -225,7 +149,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
                   children: /* @__PURE__ */ _jsx(motion.p, {
                     style: {
                       '--font-selector': 'R0Y7RE0gU2Fucy01MDA=',
-                      '--framer-font-family': '"DM Sans", sans-serif',
+                      '--framer-font-family': '"DM Sans", "DM Sans Placeholder", sans-serif',
                       '--framer-font-weight': '500',
                       '--framer-text-alignment': 'center',
                       '--framer-text-color': 'var(--extracted-r6o4lv, rgb(255, 255, 255))',
@@ -233,46 +157,79 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
                     children: 'Verify',
                   },),
                 },),
-                className: 'framer-1tc6t8n',
+                className: 'framer-1a6tlox',
                 fonts: ['GF;DM Sans-500',],
                 layoutDependency,
-                layoutId: 'zr8Ya9qcC',
+                layoutId: 'RUvhPJb2n',
                 style: { '--extracted-r6o4lv': 'rgb(255, 255, 255)', },
                 transformTemplate: transformTemplate2,
                 verticalAlignment: 'top',
                 withExternalLayout: true,
               },),
             },),
+            /* @__PURE__ */ _jsx(SVG, {
+              className: 'framer-gfo1uo',
+              layout: 'position',
+              layoutDependency,
+              layoutId: 'N69MLGpuF',
+              opacity: 1,
+              svg:
+                '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 68 68"><path d="M 34 7 C 48.912 7 61 19.088 61 34 C 61 48.912 48.912 61 34 61 C 19.088 61 7 48.912 7 34 C 7 19.088 19.088 7 34 7 Z" fill="#ff79ad"></path><path d="M 34 2 C 51.673 2 66 16.327 66 34 C 66 51.673 51.673 66 34 66 C 16.327 66 2 51.673 2 34 C 2 16.327 16.327 2 34 2 Z" fill="transparent" stroke-width="4" stroke="#ff79ad"></path></svg>',
+              svgContentId: 4035983240,
+              withExternalLayout: true,
+            },),
+            /* @__PURE__ */ _jsx(RichText, {
+              __fromCanvasComponent: true,
+              children: /* @__PURE__ */ _jsx(React.Fragment, {
+                children: /* @__PURE__ */ _jsx(motion.h1, {
+                  className: 'framer-styles-preset-ame1jg',
+                  'data-styles-preset': 'e81t2mHNr',
+                  style: { '--framer-text-alignment': 'center', },
+                  children: 'Upload',
+                },),
+              },),
+              className: 'framer-1c12ksg',
+              fonts: ['Inter',],
+              layoutDependency,
+              layoutId: 'ZbP3PJnpb',
+              style: { '--framer-link-text-color': 'rgb(0, 153, 255)', '--framer-link-text-decoration': 'underline', },
+              transformTemplate: transformTemplate1,
+              verticalAlignment: 'top',
+              withExternalLayout: true,
+            },),
             /* @__PURE__ */ _jsx(ComponentViewportProvider, {
+              width: (componentViewport === null || componentViewport === void 0 ? void 0 : componentViewport.width) || '100vw',
               children: /* @__PURE__ */ _jsx(motion.div, {
-                className: 'framer-130wckd-container',
+                className: 'framer-1fdi5e-container',
                 layoutDependency,
-                layoutId: 'Ef2CAkOWM-container',
-                children: /* @__PURE__ */ _jsx(Icon, {
-                  color: 'rgb(0, 0, 0)',
+                layoutId: 'HjQ3eZT1w-container',
+                children: /* @__PURE__ */ _jsx(stdin_default, {
                   height: '100%',
-                  iconSearch: '',
-                  iconSelection: 'ArrowLeft',
-                  id: 'Ef2CAkOWM',
-                  layoutId: 'Ef2CAkOWM',
-                  mirrored: false,
-                  onClick: onClickf78vvf,
-                  selectByList: true,
+                  id: 'HjQ3eZT1w',
+                  layoutId: 'HjQ3eZT1w',
                   style: { height: '100%', width: '100%', },
                   width: '100%',
                 },),
               },),
             },),
-            /* @__PURE__ */ _jsx(SVG, {
-              className: 'framer-6vjvou',
-              layout: 'position',
-              layoutDependency,
-              layoutId: 'sYJn5JBsR',
-              opacity: 1,
-              svg:
-                '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 68 68"><path d="M 34 7 C 48.912 7 61 19.088 61 34 C 61 48.912 48.912 61 34 61 C 19.088 61 7 48.912 7 34 C 7 19.088 19.088 7 34 7 Z" fill="#ff79ad"></path><path d="M 34 2 C 51.673 2 66 16.327 66 34 C 66 51.673 51.673 66 34 66 C 16.327 66 2 51.673 2 34 C 2 16.327 16.327 2 34 2 Z" fill="transparent" stroke-width="4" stroke="#ff79ad"></path></svg>',
-              svgContentId: 3537820430,
-              withExternalLayout: true,
+            /* @__PURE__ */ _jsx(ComponentViewportProvider, {
+              children: /* @__PURE__ */ _jsx(motion.div, {
+                className: 'framer-4c258p-container',
+                layoutDependency,
+                layoutId: 'q5Ovx0fSJ-container',
+                children: /* @__PURE__ */ _jsx(Icon, {
+                  color: 'rgb(0, 0, 0)',
+                  height: '100%',
+                  iconSearch: '',
+                  iconSelection: 'ArrowLeft',
+                  id: 'q5Ovx0fSJ',
+                  layoutId: 'q5Ovx0fSJ',
+                  mirrored: false,
+                  selectByList: true,
+                  style: { height: '100%', width: '100%', },
+                  width: '100%',
+                },),
+              },),
             },),
           ],
         },),
@@ -282,33 +239,37 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref,) {
 },);
 var css2 = [
   '@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }',
-  '.framer-6Ksrg.framer-wy8fb3, .framer-6Ksrg .framer-wy8fb3 { display: block; }',
-  '.framer-6Ksrg.framer-sh5ysn { height: 790px; overflow: hidden; position: relative; width: 386px; }',
-  '.framer-6Ksrg .framer-1c996ay { aspect-ratio: 0.4888888888888889 / 1; flex: none; height: var(--framer-aspect-ratio-supported, 790px); left: 0px; overflow: visible; position: absolute; right: 0px; top: 0px; }',
-  '.framer-6Ksrg .framer-1akt53l-container { flex: none; height: auto; left: 50%; position: absolute; top: 29px; width: 79px; }',
-  '.framer-6Ksrg .framer-1oh51il { cursor: pointer; flex: none; height: 15px; left: calc(48.96373056994821% - 64px / 2); overflow: visible; position: absolute; top: 32px; width: 64px; }',
-  '.framer-6Ksrg .framer-1s4u4xr { aspect-ratio: 0.75 / 1; flex: none; height: var(--framer-aspect-ratio-supported, 409px); left: 50%; overflow: visible; position: absolute; top: 46%; width: 307px; }',
-  '.framer-6Ksrg .framer-rzekld { flex: none; height: 18px; left: 43px; position: absolute; top: 115px; white-space: pre-wrap; width: 209px; word-break: break-word; word-wrap: break-word; }',
-  '.framer-6Ksrg .framer-1s46p5e { align-content: center; align-items: center; bottom: 66px; cursor: pointer; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: 42px; justify-content: center; left: calc(49.74093264248707% - 299px / 2); padding: 10px 20px 10px 20px; position: absolute; width: 299px; }',
-  '.framer-6Ksrg .framer-1tc6t8n { flex: none; height: auto; left: 50%; overflow: visible; position: absolute; top: 50%; white-space: pre; width: auto; z-index: 1; }',
-  '.framer-6Ksrg .framer-130wckd-container { flex: none; height: 44px; left: 30px; position: absolute; top: 58px; width: 44px; }',
-  '.framer-6Ksrg .framer-6vjvou { bottom: 133px; flex: none; height: 68px; left: calc(50.00000000000002% - 68px / 2); position: absolute; width: 68px; }',
-  '@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) { .framer-6Ksrg .framer-1s46p5e { gap: 0px; } .framer-6Ksrg .framer-1s46p5e > * { margin: 0px; margin-left: calc(8px / 2); margin-right: calc(8px / 2); } .framer-6Ksrg .framer-1s46p5e > :first-child { margin-left: 0px; } .framer-6Ksrg .framer-1s46p5e > :last-child { margin-right: 0px; } }',
+  '.framer-dCF60.framer-75vpyf, .framer-dCF60 .framer-75vpyf { display: block; }',
+  '.framer-dCF60.framer-tu9yvp { height: 844px; overflow: hidden; position: relative; width: 390px; }',
+  '.framer-dCF60 .framer-3t8asx { aspect-ratio: 0.75 / 1; flex: none; height: var(--framer-aspect-ratio-supported, 439px); left: 50%; overflow: visible; position: absolute; top: 156px; width: 329px; }',
+  '.framer-dCF60 .framer-1b4fzpx { cursor: pointer; flex: none; height: 15px; left: calc(48.71794871794874% - 64px / 2); overflow: visible; position: absolute; top: 58px; width: 64px; }',
+  '.framer-dCF60 .framer-ydocx8 { align-content: center; align-items: center; bottom: 94px; cursor: pointer; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: 42px; justify-content: center; left: calc(49.48717948717951% - 299px / 2); padding: 10px 20px 10px 20px; position: absolute; width: 299px; }',
+  '.framer-dCF60 .framer-1a6tlox { flex: none; height: auto; left: 50%; overflow: visible; position: absolute; top: 50%; white-space: pre; width: auto; z-index: 1; }',
+  '.framer-dCF60 .framer-gfo1uo { flex: none; height: 68px; left: calc(49.743589743589766% - 68px / 2); position: absolute; top: calc(76.89573459715642% - 68px / 2); width: 68px; }',
+  '.framer-dCF60 .framer-1c12ksg { flex: none; height: auto; left: 50%; position: absolute; top: 100px; white-space: pre-wrap; width: 209px; word-break: break-word; word-wrap: break-word; z-index: 1; }',
+  '.framer-dCF60 .framer-1fdi5e-container { flex: none; height: 64px; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; }',
+  '.framer-dCF60 .framer-4c258p-container { flex: none; height: 44px; left: 30px; position: absolute; top: 30px; width: 44px; }',
+  '@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) { .framer-dCF60 .framer-ydocx8 { gap: 0px; } .framer-dCF60 .framer-ydocx8 > * { margin: 0px; margin-left: calc(8px / 2); margin-right: calc(8px / 2); } .framer-dCF60 .framer-ydocx8 > :first-child { margin-left: 0px; } .framer-dCF60 .framer-ydocx8 > :last-child { margin-right: 0px; } }',
   ...css,
 ];
-var FramerEBpO5n2sI = withCSS(Component, css2, 'framer-6Ksrg',);
-var stdin_default = FramerEBpO5n2sI;
-FramerEBpO5n2sI.displayName = 'upload';
-FramerEBpO5n2sI.defaultProps = { height: 790, width: 386, };
-addPropertyControls(FramerEBpO5n2sI, {
-  QbxzG0jC6: { title: 'Tap', type: ControlType.EventHandler, },
-  PAVPg5q6C: { title: 'Tap 2', type: ControlType.EventHandler, },
-  dXvtPIGB7: { title: 'Tap 3', type: ControlType.EventHandler, },
+var Framerw6TVVpUFM = withCSS(Component, css2, 'framer-dCF60',);
+var stdin_default2 = Framerw6TVVpUFM;
+Framerw6TVVpUFM.displayName = 'V2 - upload';
+Framerw6TVVpUFM.defaultProps = { height: 844, width: 390, };
+addPropertyControls(Framerw6TVVpUFM, {
+  p1A8QFNA3: { title: 'Tap', type: ControlType.EventHandler, },
+  nYq9gKXt0: { title: 'Tap 2', type: ControlType.EventHandler, },
 },);
-addFonts(FramerEBpO5n2sI, [
+addFonts(Framerw6TVVpUFM, [
   {
     explicitInter: true,
     fonts: [{
+      family: 'DM Sans',
+      source: 'google',
+      style: 'normal',
+      url: 'https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxhS2f3ZGMZpg.woff2',
+      weight: '500',
+    }, {
       family: 'Inter',
       source: 'framer',
       style: 'normal',
@@ -358,15 +319,9 @@ addFonts(FramerEBpO5n2sI, [
       unicodeRange: 'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB',
       url: 'https://app.framerstatic.com/Inter-Regular.vietnamese-QK7VSWXK.woff2',
       weight: '400',
-    }, {
-      family: 'DM Sans',
-      source: 'google',
-      style: 'normal',
-      url: 'https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxhS2f3ZGMZpg.woff2',
-      weight: '500',
     },],
   },
-  ...ClockFonts,
+  ...TopBarFonts,
   ...IconoirFonts,
   ...getFontsFromSharedStyle(fonts,),
 ], { supportsExplicitInterCodegen: true, },);
@@ -374,8 +329,8 @@ addFonts(FramerEBpO5n2sI, [
 // virtual:upload
 import { WithFramerBreakpoints, } from 'unframer';
 import { jsx, } from 'react/jsx-runtime';
-stdin_default.Responsive = (props,) => {
-  return /* @__PURE__ */ jsx(WithFramerBreakpoints, { Component: stdin_default, ...props, },);
+stdin_default2.Responsive = (props,) => {
+  return /* @__PURE__ */ jsx(WithFramerBreakpoints, { Component: stdin_default2, ...props, },);
 };
-var upload_default = stdin_default;
+var upload_default = stdin_default2;
 export { upload_default as default, };

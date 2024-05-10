@@ -1,4 +1,4 @@
-import EmailLogin from "../../framer/emailLogin"
+import LoginLanding from "../../framer/loginLanding"
 import Link from "next/link";
 import { headers } from "next/headers";
 import { createClient } from "@/utils/supabase/server";
@@ -74,8 +74,8 @@ export default function Login({
         </svg>{" "}
         Back
       </Link>
-      <EmailLogin email="test@gmail.com" password="1234"  />
-      {/*<form className="animate-in flex-1 flex flex-col w-full justify-center gap-2 text-foreground">
+      <LoginLanding />
+      <form className="animate-in flex-1 flex flex-col w-full justify-center gap-2 text-foreground">
         <label className="text-md" htmlFor="email">
           Email
         </label>
@@ -114,7 +114,7 @@ export default function Login({
             {searchParams.message}
           </p>
         )}
-        </form> */}
+        </form> */
     </div>
   );
 }

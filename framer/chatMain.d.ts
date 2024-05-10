@@ -10,14 +10,16 @@ export interface Props {
     width?: any
     height?: any
     layoutId?: string
-
+    "tap"?: Function
+    "tap 2"?: Function
+    "tap 3"?: Function
 }
 
-const LandingFramerComponent = (props: Props) => any
+const ChatMainFramerComponent = (props: Props) => any
 
 type VariantsMap = Partial<Record<UnframerBreakpoint, Props['variant']>> & { base: Props['variant'] }
 
-LandingFramerComponent.Responsive = (props: Omit<Props, 'variant'> & {variants: VariantsMap}) => any
+ChatMainFramerComponent.Responsive = (props: Omit<Props, 'variant'> & {variants: VariantsMap}) => any
 
-export default LandingFramerComponent
+export default ChatMainFramerComponent
 

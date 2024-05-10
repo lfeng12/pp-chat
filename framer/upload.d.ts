@@ -12,7 +12,6 @@ export interface Props {
     layoutId?: string
     "tap"?: Function
     "tap 2"?: Function
-    "tap 3"?: Function
 }
 
 const UploadFramerComponent = (props: Props) => any

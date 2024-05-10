@@ -11,13 +11,6 @@ export interface Props {
     height?: any
     layoutId?: string
     "tap"?: Function
-    "login"?: Function
-    "onEmailChange"?: Function
-    "on Password Change"?: Function
-    "password"?: string
-    "email"?: string
-    "on Sign Up"?: Function
-    "forget Password"?: Function
 }
 
 const EmailLoginFramerComponent = (props: Props) => any
